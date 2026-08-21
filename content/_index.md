@@ -3,20 +3,19 @@
 title:
 date: 2022-10-24
 type: landing
-
 sections:
   - block: hero
     content:
       title: |
-        Junyoung Kwon
-        Research Group
+        SIM Lab
+        Semiconductor Integration Materials Laboratory
       image:
         filename: welcome.jpg
       text: |
         <br>
-        
-        The **Junyoung Kwon Research Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
-  
+
+        **SIM Lab (Semiconductor Integration Materials Laboratory)** at Hanyang University researches 2D semiconductor materials and their integration into next-generation logic and memory devices, with a focus on monolithic 3D integration and contact engineering.
+
   - block: collection
     content:
       title: Latest News
@@ -35,7 +34,7 @@ sections:
     design:
       view: card
       columns: '1'
-  
+
   - block: markdown
     content:
       title:
@@ -44,7 +43,7 @@ sections:
     design:
       columns: '1'
       background:
-        image: 
+        image:
           filename: coders.jpg
           filters:
             brightness: 1
@@ -55,7 +54,6 @@ sections:
       spacing:
         padding: ['20px', '0', '20px', '0']
       css_class: fullscreen
-
   - block: collection
     content:
       title: Latest Preprints
@@ -68,7 +66,6 @@ sections:
     design:
       view: citation
       columns: '1'
-
   - block: markdown
     content:
       title:
