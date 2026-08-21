@@ -1,40 +1,37 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Junyoung Kwon Ph.D.
 
 # Full Name (for SEO)
-first_name: Nelson
-last_name: Bighetti
+first_name: Junyoung
+last_name: Kwon
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Assistant Professor
 
 # Organizations/Affiliations
 organizations:
-  - name: Stanford University
+  - name: Division of Materials Science and Engineering, Hanyang University
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include materials innovation for future semiconductor technologies.
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - 2D semiconductors
+  - Monolithic 3D integration
+  - Future Semiconductor Materials
 
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
+    - course: PhD in Materials Science and Engineering
+      institution: Yonsei University
+      year: 2020
+    - course: BSc in Materials Science and Engineering
+      institution: Yonsei University
       year: 2008
 
 # Social/Academic Networking
@@ -61,7 +58,7 @@ social:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ''
+email: 'jkwon at hanyang.ac.kr'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
