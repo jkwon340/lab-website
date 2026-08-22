@@ -23,19 +23,6 @@ button, input, select, textarea {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
 }
 
-/* 일반 페이지 제목만 타이타늄 색 (Hero 내부는 제외) */
-h2, h3, h4,
-h1:not(.hero *):not(.hero h1) {
-  color: var(--sim-titanium) !important;
-}
-
-/* Hero 안의 제목은 무조건 흰색 강제 고정 */
-.hero h1,
-.hero .hero-title {
-  color: #ffffff !important;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.8) !important;
-}
-
 /* 2. 컬러 팔레트 변수 */
 :root {
   --sim-primary: #0e7490;       /* 딥 시안 (강조색) */
@@ -45,11 +32,10 @@ h1:not(.hero *):not(.hero h1) {
   --sim-titanium: #1e293b;      /* 타이타늄 다크 그레이 (헤딩/헤더) */
 }
 
-/* 3. 링크 & 강조 요소 */
+/* 3. 링크 & 강조 요소 (Hero 제외) */
 a,
 .text-primary,
 .nav-link.active,
-.hero-title,
 .article-tags a {
   color: var(--sim-primary) !important;
 }
@@ -65,21 +51,3 @@ a:hover {
 }
 .btn-outline-primary {
   color: var(--sim-primary) !important;
-  border-color: var(--sim-primary) !important;
-}
-
-/* 5. 네비게이션 바 하단 포인트 라인 */
-.navbar-custom {
-  border-bottom: 3px solid var(--sim-primary);
-}
-
-/* 6. 헤딩/제목 색상을 타이타늄 그레이로 (완전 검정보다 부드럽게) */
-h1, h2, h3, h4, .hero-title {
-  color: var(--sim-titanium) !important;
-}
-
-/* 7. Publications/People 등 카드형 섹션 hover 포인트 */
-.card:hover,
-.people:hover {
-  box-shadow: 0 4px 14px rgba(14, 116, 144, 0.15) !important;
-}
