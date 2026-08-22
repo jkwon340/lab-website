@@ -7,3 +7,71 @@
 .cta-group {
   justify-content: center;
 }
+
+/* ===========================
+   SIM Lab Custom Theme
+   Titanium Gray + Cyan Accent / Inter
+=========================== */
+
+/* 1. Inter 폰트 로드 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+body,
+h1, h2, h3, h4, h5, h6,
+.navbar-custom,
+button, input, select, textarea {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+h1, h2, h3, .hero-title {
+  font-weight: 700 !important;
+  letter-spacing: -0.02em;
+}
+
+/* 2. 컬러 팔레트 변수 */
+:root {
+  --sim-primary: #0e7490;       /* 딥 시안 (강조색) */
+  --sim-primary-dark: #155e75;  /* 진한 시안 (hover 등) */
+  --sim-primary-light: #22d3ee; /* 밝은 시안 (포인트) */
+  --sim-steel: #475569;         /* 스틸 그레이 (보조 텍스트) */
+  --sim-titanium: #1e293b;      /* 타이타늄 다크 그레이 (헤딩/헤더) */
+}
+
+/* 3. 링크 & 강조 요소 */
+a,
+.text-primary,
+.nav-link.active,
+.hero-title,
+.article-tags a {
+  color: var(--sim-primary) !important;
+}
+a:hover {
+  color: var(--sim-primary-dark) !important;
+}
+
+/* 4. 버튼 */
+.btn-primary,
+.btn-outline-primary:hover {
+  background-color: var(--sim-primary) !important;
+  border-color: var(--sim-primary) !important;
+}
+.btn-outline-primary {
+  color: var(--sim-primary) !important;
+  border-color: var(--sim-primary) !important;
+}
+
+/* 5. 네비게이션 바 하단 포인트 라인 */
+.navbar-custom {
+  border-bottom: 3px solid var(--sim-primary);
+}
+
+/* 6. 헤딩/제목 색상을 타이타늄 그레이로 (완전 검정보다 부드럽게) */
+h1, h2, h3, h4, .hero-title {
+  color: var(--sim-titanium) !important;
+}
+
+/* 7. Publications/People 등 카드형 섹션 hover 포인트 */
+.card:hover,
+.people:hover {
+  box-shadow: 0 4px 14px rgba(14, 116, 144, 0.15) !important;
+}
