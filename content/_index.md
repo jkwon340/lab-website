@@ -15,9 +15,7 @@ sections:
       image:
         filename: Lab_main.png
         filters:
-          brightness: 0.7
-        size: cover
-        position: center
+          brightness: 0.55
       cta:
         url: ./people/
         label: Meet the Team
