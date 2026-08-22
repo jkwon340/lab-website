@@ -11,7 +11,7 @@ sections:
       text: |
         Semiconductor Integration Materials Laboratory, Hanyang University
 
-        The SIM Lab (Semiconductor Integration Materials Laboratory) at Hanyang University focuses on materials innovation to enable next-generation semiconductor integration technologies, ranging from novel 2D materials to monolithic 3D architectures.
+        The SIM Lab at Hanyang University focuses on materials innovation to enable next-generation semiconductor integration technologies, ranging from novel 2D materials to monolithic 3D architectures.
       image:
         filename: Lab main.png
         filters:
