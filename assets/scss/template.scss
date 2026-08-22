@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 // Make page header alignment consistent with widget page header alignment
 .universal-wrapper h1 {
   text-align: center;
@@ -13,9 +15,6 @@
    Titanium Gray + Cyan Accent / Inter
 =========================== */
 
-/* 1. Inter 폰트 로드 */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
 body,
 h1, h2, h3, h4, h5, h6,
 .navbar-custom,
@@ -23,16 +22,14 @@ button, input, select, textarea {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
 }
 
-/* 2. 컬러 팔레트 변수 */
 :root {
-  --sim-primary: #0e7490;       /* 딥 시안 (강조색) */
-  --sim-primary-dark: #155e75;  /* 진한 시안 (hover 등) */
-  --sim-primary-light: #22d3ee; /* 밝은 시안 (포인트) */
-  --sim-steel: #475569;         /* 스틸 그레이 (보조 텍스트) */
-  --sim-titanium: #1e293b;      /* 타이타늄 다크 그레이 (헤딩/헤더) */
+  --sim-primary: #0e7490;
+  --sim-primary-dark: #155e75;
+  --sim-primary-light: #22d3ee;
+  --sim-steel: #475569;
+  --sim-titanium: #1e293b;
 }
 
-/* 3. 링크 & 강조 요소 (Hero 제외) */
 a,
 .text-primary,
 .nav-link.active,
@@ -43,5 +40,31 @@ a:hover {
   color: var(--sim-primary-dark) !important;
 }
 
-/* 4. 버튼 */
 .btn-primary,
+.btn-outline-primary:hover {
+  background-color: var(--sim-primary) !important;
+  border-color: var(--sim-primary) !important;
+}
+.btn-outline-primary {
+  color: var(--sim-primary) !important;
+  border-color: var(--sim-primary) !important;
+}
+
+.navbar-custom {
+  border-bottom: 3px solid var(--sim-primary);
+}
+
+h1, h2, h3, h4 {
+  color: var(--sim-titanium) !important;
+}
+
+.card:hover,
+.people:hover {
+  box-shadow: 0 4px 14px rgba(14, 116, 144, 0.15) !important;
+}
+
+.wg-hero.dark .hero-title,
+.hero-title {
+  color: #ffffff !important;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.8) !important;
+}
