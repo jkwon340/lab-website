@@ -43,7 +43,9 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} SIM Lab, Hanyang University. This work is licensed under {license}'
+    notice: '© {year} SIM Lab, Hanyang University.'
+    license:
+      enable: false
 
 # Localization
 
