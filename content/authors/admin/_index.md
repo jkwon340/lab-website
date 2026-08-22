@@ -55,7 +55,7 @@ highlight_name: true
 
 # Organizational groups that you belong to (for People widget)
 user_groups:
-  - Principal Investigators
+  - Principal Investigator
 ---
 
 Junyoung Kwon is an Assistant Professor in the Division of Materials Science and Engineering at Hanyang University. He received his Ph.D. in Materials Science and Engineering from Yonsei University in 2020, advised by Prof. Gwan-Hyoung Lee, and conducted visiting research at Seoul National University and Columbia University during his doctoral studies.
