@@ -13,7 +13,7 @@ sections:
 
         SIM Lab researches 2D semiconductor materials and their integration into next-generation logic and memory devices, with a focus on monolithic 3D integration and contact engineering.
       image:
-        filename: welcome.jpg
+        filename: lab-diagram.png
         filters:
           brightness: 0.55
       cta:
