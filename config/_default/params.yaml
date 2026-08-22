@@ -16,7 +16,7 @@ appearance:
 marketing:
   seo:
     org_name: 'SIM Lab (Semiconductor Integration Materials Laboratory), Hanyang University'
-    description: 'The SIM Lab at Hanyang University focuses on materials innovation to enable next-generation semiconductor integration technologies, ranging from novel 2D materials to monolithic 3D architectures.'
+    description: 'The SIM Lab (Semiconductor Integration Materials Laboratory) at Hanyang University focuses on materials innovation to enable next-generation semiconductor integration technologies, ranging from novel 2D materials to monolithic 3D architectures.'
 
   analytics:
     google_analytics: ''
