@@ -24,7 +24,7 @@ authors:
   - Jeehwan Kim
 date: "2026-01-01"
 doi: ""
-publication_types: ["2"]
+publication_types: ["Journal article"]
 publication: "*Nature Materials* 25, 824-831 (2026)"
 publication_short: ""
 abstract: ""
