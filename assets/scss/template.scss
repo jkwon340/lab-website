@@ -81,3 +81,8 @@ h1, h2, h3, h4 {
     max-width: 45% !important;
   }
 }
+.hero-media img {
+  position: relative;
+  top: 20px;    /* 아래로 이동 (숫자 키우면 더 아래로) */
+  left: 15px;   /* 오른쪽으로 이동 (숫자 키우면 더 오른쪽으로) */
+}
