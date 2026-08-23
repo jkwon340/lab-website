@@ -13,7 +13,7 @@ sections:
 
         The SIM Lab at Hanyang University focuses on materials innovation to enable next-generation semiconductor integration technologies, ranging from novel 2D materials to monolithic 3D architectures.
       image:
-        filename: Lab_main.png
+        filename: Lab main.png
         filters:
           brightness: 0.55
       cta:
