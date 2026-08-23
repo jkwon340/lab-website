@@ -69,11 +69,15 @@ h1, h2, h3, h4 {
   text-shadow: 0 2px 12px rgba(0,0,0,0.8) !important;
 }
 
-/* Lab main 이미지 확대 */
-.hero-media {
-  overflow: hidden;
-}
-.hero-media img {
-  transform: scale(1.15);
-  transform-origin: center;
+/* Lab main 이미지 - 박스 자체를 넓혀서 확대 효과 (잘림 없음) */
+@media (min-width: 768px) {
+  .hero-media {
+    flex: 0 0 55% !important;
+    max-width: 55% !important;
+  }
+  .hero-media + div,
+  .row > .col-12.col-md-6:not(.hero-media) {
+    flex: 0 0 45% !important;
+    max-width: 45% !important;
+  }
 }
