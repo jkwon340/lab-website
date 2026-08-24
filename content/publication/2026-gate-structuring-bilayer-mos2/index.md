@@ -1,9 +1,9 @@
 ---
 title: "Gate structuring on bilayer MoS2 nFET enables ultrahigh current density"
 authors:
-  - admin
-  - Kyoung Yeon Kim
-  - Dongwon Jang
+  - "Junyoung Kwon†"
+  - "Kyoung Yeon Kim†*"
+  - "Dongwon Jang†"
   - Min Seok Yoo
   - Alum Jung
   - Dong-Su Ko
@@ -18,18 +18,18 @@ authors:
   - Sang Won Kim
   - Uihui Kwon
   - Dae Sin Kim
-  - Sung Kyu Lim
-  - Kyung-Eun Byun
-  - Minsu Seol
-  - Jeehwan Kim
+  - "Sung Kyu Lim*"
+  - "Kyung-Eun Byun*"
+  - "Minsu Seol*"
+  - "Jeehwan Kim*"
 date: "2026-01-01"
-doi: ""
+doi: "10.1038/s41563-025-02452-y"
 publication_types: ["article-journal"]
-publication: "*Nature Materials* 25, 824-831 (2026)"
+publication: "*Nature Materials* 25, 824-831"
 publication_short: ""
 abstract: ""
 summary: ""
-tags:
-
+tags: []
 featured: true
+url_pdf: "https://doi.org/10.1038/s41563-025-02452-y"
 ---
