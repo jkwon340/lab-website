@@ -19,7 +19,7 @@ authors:
 date: "2024-01-01"
 doi: "10.1038/s41565-024-01695-1"
 publication_types: ["article-journal"]
-publication: "*Nature Nanotechnology* 19, 895-906"
+publication: "*Nature Nanotechnology* 19, 895-906 (2024)"
 publication_short: ""
 abstract: ""
 summary: ""
