@@ -1,6 +1,6 @@
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  // 1) 저자 뒤 "(연도)." 텍스트 제거 (기존 기능 유지)
+  // 1) 저자 뒤 "(연도)." 텍스트 제거
   document.querySelectorAll('.pub-list-item.view-citation').forEach(function (item) {
     Array.from(item.childNodes).forEach(function (node) {
       if (node.nodeType === Node.TEXT_NODE && /^\(\d{4}\)\.\s*$/.test(node.textContent.trim())) {
@@ -9,17 +9,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // 2) 랩 멤버 이름만 링크 유지, 나머지는 링크 해제 (이름 텍스트 기준으로 판단)
-  var labMemberNames = ['Junyoung Kwon']; // ← 새 랩 멤버 추가 시 여기에 이름 추가 (콤마로 구분)
-
-  function isLabMember(text) {
-    return labMemberNames.some(function (name) {
-      return text.indexOf(name) !== -1;
-    });
-  }
+  // 2) 랩 멤버 등록부 — 새 멤버 합류 시 여기에 한 줄만 추가하면 끝
+  var labMembers = {
+    'Junyoung Kwon': '/author/admin/'  // ← 실제 프로필 URL로 아래에서 확인 후 수정
+    // 'Jane Doe': '/author/jane-doe/'
+  };
 
   document.querySelectorAll('.article-metadata.li-cite-author a[href*="/author/"]').forEach(function (a) {
-    if (!isLabMember(a.textContent)) {
+    var matchedUrl = null;
+    for (var name in labMembers) {
+      if (a.textContent.indexOf(name) !== -1) {
+        matchedUrl = labMembers[name];
+        break;
+      }
+    }
+    if (matchedUrl) {
+      a.setAttribute('href', matchedUrl); // 실제 프로필로 강제 연결
+    } else {
       var textNode = document.createTextNode(a.textContent);
       a.parentNode.replaceChild(textNode, a);
     }
