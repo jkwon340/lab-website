@@ -1,11 +1,23 @@
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+  // 1) 저자 뒤 "(연도)." 텍스트 제거 (기존 기능 유지)
   document.querySelectorAll('.pub-list-item.view-citation').forEach(function (item) {
     Array.from(item.childNodes).forEach(function (node) {
       if (node.nodeType === Node.TEXT_NODE && /^\(\d{4}\)\.\s*$/.test(node.textContent.trim())) {
         node.textContent = '';
       }
     });
+  });
+
+  // 2) 실제 랩 멤버(프로필 있는 사람)만 링크 유지, 나머지는 링크 해제
+  var labMemberSlugs = ['admin']; // ← 여기에 실제 프로필 폴더명을 추가하세요 (예: 'jane-doe')
+  document.querySelectorAll('.article-metadata.li-cite-author a[href*="/author/"]').forEach(function (a) {
+    var match = a.getAttribute('href').match(/\/author\/([^/]+)\//);
+    var slug = match ? match[1] : null;
+    if (!slug || labMemberSlugs.indexOf(slug) === -1) {
+      var text = document.createTextNode(a.textContent);
+      a.parentNode.replaceChild(text, a);
+    }
   });
 });
 </script>
