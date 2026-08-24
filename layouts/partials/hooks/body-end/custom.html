@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // 2) 랩 멤버 등록부 — 새 멤버 합류 시 여기에 한 줄만 추가하면 끝
   var labMembers = {
-    'Junyoung Kwon': '/author/admin/'  // ← 실제 프로필 URL로 아래에서 확인 후 수정
+    'Junyoung Kwon': '/author/junyoung-kwon-ph.d./'
     // 'Jane Doe': '/author/jane-doe/'
   };
 
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
     if (matchedUrl) {
-      a.setAttribute('href', matchedUrl); // 실제 프로필로 강제 연결
+      a.setAttribute('href', matchedUrl);
     } else {
       var textNode = document.createTextNode(a.textContent);
       a.parentNode.replaceChild(textNode, a);
