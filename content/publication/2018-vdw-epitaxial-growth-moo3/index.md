@@ -11,7 +11,7 @@ authors:
 date: "2018-11-22"
 doi: "10.1088/2053-1583/aaedc8"
 publication_types: ["article-journal"]
-publication: "*2D Materials* 6, 015016"
+publication: "*2D Materials* 6, 015016 (2018)"
 publication_short: ""
 abstract: ""
 summary: ""
