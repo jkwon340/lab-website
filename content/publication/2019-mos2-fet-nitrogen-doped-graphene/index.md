@@ -3,19 +3,19 @@ title: "High-performance Monolayer MoS2 Field-effect Transistor with Large-scale
 authors:
   - Dongjea Seo
   - Dong Yun Lee
-  - admin
+  - "Junyoung Kwon"
   - Jea Jung Lee
   - Takashi Taniguchi
   - Kenji Watanabe
   - Gwan-Hyoung Lee
   - Keun Soo Kim
   - James Hone
-  - Young Duck Kim
-  - Heon-jin Choi
+  - "Young Duck Kim*"
+  - "Heon-jin Choi*"
 date: "2019-07-01"
 doi: "10.1063/1.5094682"
 publication_types: ["article-journal"]
-publication: "*Applied Physics Letters* 115, 012104 (2019)"
+publication: "*Applied Physics Letters* 115, 012104"
 publication_short: ""
 abstract: ""
 summary: ""
