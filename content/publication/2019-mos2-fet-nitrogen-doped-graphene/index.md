@@ -15,7 +15,7 @@ authors:
 date: "2019-07-01"
 doi: "10.1063/1.5094682"
 publication_types: ["article-journal"]
-publication: "*Applied Physics Letters* 115, 012104"
+publication: "*Applied Physics Letters* 115, 012104 (2019)"
 publication_short: ""
 abstract: ""
 summary: ""
