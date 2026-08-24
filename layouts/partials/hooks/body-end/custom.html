@@ -1,0 +1,11 @@
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.pub-list-item.view-citation').forEach(function (item) {
+    Array.from(item.childNodes).forEach(function (node) {
+      if (node.nodeType === Node.TEXT_NODE && /^\(\d{4}\)\.\s*$/.test(node.textContent.trim())) {
+        node.textContent = '';
+      }
+    });
+  });
+});
+</script>
