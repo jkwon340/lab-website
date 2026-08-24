@@ -11,7 +11,7 @@ authors:
 date: "2018-09-19"
 doi: "10.1021/acsami.8b10203"
 publication_types: ["article-journal"]
-publication: "*ACS Applied Materials & Interfaces* 10, 31480-31487"
+publication: "*ACS Applied Materials & Interfaces* 10, 31480-31487 (2018)"
 publication_short: ""
 abstract: ""
 summary: ""
