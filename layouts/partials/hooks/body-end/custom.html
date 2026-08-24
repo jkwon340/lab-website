@@ -9,14 +9,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // 2) 실제 랩 멤버(프로필 있는 사람)만 링크 유지, 나머지는 링크 해제
-  var labMemberSlugs = ['admin']; // ← 여기에 실제 프로필 폴더명을 추가하세요 (예: 'jane-doe')
+  // 2) 랩 멤버 이름만 링크 유지, 나머지는 링크 해제 (이름 텍스트 기준으로 판단)
+  var labMemberNames = ['Junyoung Kwon']; // ← 새 랩 멤버 추가 시 여기에 이름 추가 (콤마로 구분)
+
+  function isLabMember(text) {
+    return labMemberNames.some(function (name) {
+      return text.indexOf(name) !== -1;
+    });
+  }
+
   document.querySelectorAll('.article-metadata.li-cite-author a[href*="/author/"]').forEach(function (a) {
-    var match = a.getAttribute('href').match(/\/author\/([^/]+)\//);
-    var slug = match ? match[1] : null;
-    if (!slug || labMemberSlugs.indexOf(slug) === -1) {
-      var text = document.createTextNode(a.textContent);
-      a.parentNode.replaceChild(text, a);
+    if (!isLabMember(a.textContent)) {
+      var textNode = document.createTextNode(a.textContent);
+      a.parentNode.replaceChild(textNode, a);
     }
   });
 });
