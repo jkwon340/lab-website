@@ -13,7 +13,7 @@ authors:
 date: "2018-12-20"
 doi: "10.1021/acs.jpcc.8b10094"
 publication_types: ["article-journal"]
-publication: "*Journal of Physical Chemistry C* 122, 28830-28838"
+publication: "*Journal of Physical Chemistry C* 122, 28830-28838 (2018)"
 publication_short: ""
 abstract: ""
 summary: ""
