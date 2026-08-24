@@ -11,7 +11,7 @@ authors:
 date: "2017-01-01"
 doi: "10.1039/C7NR01501A"
 publication_types: ["article-journal"]
-publication: "*Nanoscale* 9, 6151-6157 (2017)"
+publication: "*Nanoscale* 9, 6151-6157"
 publication_short: ""
 abstract: ""
 summary: ""
