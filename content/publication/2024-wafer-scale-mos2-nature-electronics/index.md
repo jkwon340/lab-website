@@ -16,7 +16,7 @@ authors:
 date: "2024-01-01"
 doi: "10.1038/s41928-024-01158-4"
 publication_types: ["article-journal"]
-publication: "*Nature Electronics* 7, 356-364"
+publication: "*Nature Electronics* 7, 356-364 (2024)"
 publication_short: ""
 abstract: ""
 summary: ""
