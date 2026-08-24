@@ -25,7 +25,7 @@ authors:
 date: "2026-01-01"
 doi: "10.1038/s41563-025-02452-y"
 publication_types: ["article-journal"]
-publication: "*Nature Materials* 25, 824-831"
+publication: "*Nature Materials* 25, 824-831 (2026)"
 publication_short: ""
 abstract: ""
 summary: ""
