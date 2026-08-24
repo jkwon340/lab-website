@@ -4,16 +4,16 @@ authors:
   - Andrea Gnisci
   - Giuliana Faggio
   - Giacomo Messina
-  - admin
+  - "Junyoung Kwon"
   - Jong-Young Lee
   - Gwan-Hyoung Lee
   - Theodoros Dikonimos
   - Nicola Lisi
-  - Andrea Capasso
+  - "Andrea Capasso*"
 date: "2018-12-20"
 doi: "10.1021/acs.jpcc.8b10094"
 publication_types: ["article-journal"]
-publication: "*Journal of Physical Chemistry C* 122, 28830-28838 (2018)"
+publication: "*Journal of Physical Chemistry C* 122, 28830-28838"
 publication_short: ""
 abstract: ""
 summary: ""
