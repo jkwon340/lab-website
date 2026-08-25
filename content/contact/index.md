@@ -9,7 +9,7 @@ sections:
     content:
       title: Contact
       text: |-
-        반도체 집적 소재 연구실(SIM Lab)에 입학을 희망하거나 협력 연구, 그 외 다른 문의사항이 있으면 아래 연락처로 연락주세요.
+        Thank you for your interest in the Semiconductor Integrated Materials (SIM) Lab. If you are interested in joining our lab, collaborating on research, or have any other inquiries, please contact us at the information below.
       email: jkwon@hanyang.ac.kr
       phone: '02-2220-XXXX'
       address:
