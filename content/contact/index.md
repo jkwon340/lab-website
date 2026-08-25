@@ -9,41 +9,32 @@ sections:
     content:
       title: Contact
       text: |-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.
-      email: test@example.org
-      phone: 888 888 88 88
+        Thank you for your interest in the Semiconductor Integrated Materials (SIM) Lab. If you are interested in joining our lab, collaborating on research, or have any other inquiries, please contact us at the information below.
+      email: jkwon@hanyang.ac.kr
+      phone: '02-2220-XXXX'
       address:
-        street: 450 Serra Mall
-        city: Stanford
-        region: CA
-        postcode: '94305'
-        country: United States
-        country_code: US
+        street: '왕십리로 222, 신소재공학관 502호 / Advanced Materials Engineering Hall, 222 Wangsimni-ro'
+        city: '성동구, 서울특별시 / Seongdong-gu, Seoul'
+        region: ''
+        postcode: '04763'
+        country: South Korea
+        country_code: KR
       coordinates:
-        latitude: '37.4275'
-        longitude: '-122.1697'
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-      office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
-      appointment_url: 'https://calendly.com'
+        latitude: '37.556'
+        longitude: '127.045'
+      directions: 신소재공학관 5층 502호 / Room 502, 5F, Advanced Materials Engineering Hall
+      #office_hours:
+      #  - 'Monday 10:00 to 13:00'
+      #  - 'Wednesday 09:00 to 10:00'
+      #appointment_url: 'https://calendly.com'
       #contact_links:
       #  - icon: comments
       #    icon_pack: fas
       #    name: Discuss on Forum
       #    link: 'https://discourse.gohugo.io'
-    
+
       # Automatically link email and phone or display as text?
       autolink: true
-    
-      # Email form provider
-      form:
-        provider: netlify
-        formspree:
-          id:
-        netlify:
-          # Enable CAPTCHA challenge to reduce spam?
-          captcha: false
     design:
       columns: '1'
 
