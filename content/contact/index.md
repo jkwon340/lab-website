@@ -9,20 +9,20 @@ sections:
     content:
       title: Contact
       text: |-
-        Thank you for your interest in the Semiconductor Integrated Materials (SIM) Lab. If you are interested in joining our lab, collaborating on research, or have any other inquiries, please contact us at the information below.
+        반도체 집적 소재 연구실(SIM Lab)에 입학을 희망하거나 협력 연구, 그 외 다른 문의사항이 있으면 아래 연락처로 연락주세요.
       email: jkwon@hanyang.ac.kr
       phone: '02-2220-XXXX'
       address:
-        street: '왕십리로 222, 신소재공학관 502호 / Advanced Materials Engineering Hall, 222 Wangsimni-ro'
-        city: '성동구, 서울특별시 / Seongdong-gu, Seoul'
+        street: '222 Wangsimni-ro, Advanced Materials Engineering Hall, Room 502'
+        city: Seongdong-gu, Seoul
         region: ''
         postcode: '04763'
         country: South Korea
         country_code: KR
       coordinates:
-        latitude: '37.556'
-        longitude: '127.045'
-      directions: 신소재공학관 5층 502호 / Room 502, 5F, Advanced Materials Engineering Hall
+        latitude: '37.5544819'
+        longitude: '127.0452133'
+      directions: Room 502, 5th Floor, Advanced Materials Engineering Hall
       #office_hours:
       #  - 'Monday 10:00 to 13:00'
       #  - 'Wednesday 09:00 to 10:00'
