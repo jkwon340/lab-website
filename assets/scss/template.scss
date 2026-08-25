@@ -72,17 +72,17 @@ h1, h2, h3, h4 {
 /* Lab main 이미지 - 박스 자체를 넓혀서 확대 효과 (잘림 없음) */
 @media (min-width: 768px) {
   .hero-media {
-    flex: 0 0 55% !important;
-    max-width: 55% !important;
+    flex: 0 0 60% !important;
+    max-width: 60% !important;
   }
   .hero-media + div,
   .row > .col-12.col-md-6:not(.hero-media) {
-    flex: 0 0 45% !important;
-    max-width: 45% !important;
+    flex: 0 0 40% !important;
+    max-width: 40% !important;
   }
 }
 .hero-media img {
   position: relative;
-  top: 20px;    /* 아래로 이동 (숫자 키우면 더 아래로) */
+  top: 30px;    /* 아래로 이동 (숫자 키우면 더 아래로) */
   left: 15px;   /* 오른쪽으로 이동 (숫자 키우면 더 오른쪽으로) */
 }
