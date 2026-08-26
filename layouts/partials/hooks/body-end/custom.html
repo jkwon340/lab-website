@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
     'Junyoung Kwon': '/author/junyoung-kwon-ph.d./'
     // 'Jane Doe': '/author/jane-doe/'
   };
-
   document.querySelectorAll('.article-metadata.li-cite-author a[href*="/author/"]').forEach(function (a) {
     var matchedUrl = null;
     for (var name in labMembers) {
@@ -28,6 +27,15 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       var textNode = document.createTextNode(a.textContent);
       a.parentNode.replaceChild(textNode, a);
+    }
+  });
+
+  // 3) Selected Publications 카드에서만 " — Highlighted..." 이후 텍스트 잘라내기
+  document.querySelectorAll('.selected-pubs .pub-publication').forEach(function (el) {
+    var html = el.innerHTML;
+    var idx = html.indexOf(' — ');
+    if (idx !== -1) {
+      el.innerHTML = html.substring(0, idx);
     }
   });
 });
