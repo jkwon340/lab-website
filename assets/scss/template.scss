@@ -86,3 +86,18 @@ h1, h2, h3, h4 {
   top: 30px;    /* 아래로 이동 (숫자 키우면 더 아래로) */
   left: 15px;   /* 오른쪽으로 이동 (숫자 키우면 더 오른쪽으로) */
 }
+/* Selected Publications - 카드 그리드 + 이미지 비율 정리 */
+.selected-pubs .col-lg-8 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.selected-pubs .card-simple.view-card {
+  margin-bottom: 0 !important;
+}
+.selected-pubs .card-simple.view-card img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
