@@ -115,19 +115,20 @@ h1, h2, h3, h4 {
   display: none !important;
 }
 
-/* 이미지 프레임 고정 - 카드마다 같은 비율로 통일 */
+/* 이미지 프레임 - A4 비율, 잘리지 않고 전체 표시 */
 .selected-pubs .card-simple.view-card .img-hover-zoom {
   display: block;
   width: 100%;
-  aspect-ratio: 3 / 5;
+  aspect-ratio: 210 / 297;  /* A4 용지 비율 */
   overflow: hidden;
   border-radius: 6px;
+  background-color: #f8f9fa;
 }
 .selected-pubs .card-simple.view-card .article-banner {
   width: 100% !important;
   height: 100% !important;
-  object-fit: cover !important;
-  object-position: top center !important;
+  object-fit: contain !important;  /* cover 대신 contain */
+  object-position: center !important;
 }
 
 @media (max-width: 992px) {
