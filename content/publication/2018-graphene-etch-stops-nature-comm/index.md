@@ -19,7 +19,7 @@ authors:
 date: "2018-09-28"
 doi: "10.1038/s41467-018-06524-3"
 publication_types: ["article-journal"]
-publication: "*Nature Communications* 9, 3988 (2018)"
+publication: "*Nature Communications* 9, 3988 (2018) - Highlighted by Nature Research Device and Materials Engineering, Yonsei Press, and Donga Science"
 publication_short: ""
 abstract: ""
 summary: ""
