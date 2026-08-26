@@ -32,4 +32,6 @@ summary: ""
 tags: ["Selected"]
 featured: true
 url_pdf: "https://doi.org/10.1038/s41586-024-08236-9"
+image:
+  focal_point: "Top"
 ---
