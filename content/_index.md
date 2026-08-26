@@ -65,16 +65,20 @@ sections:
       css_class: fullscreen
   - block: collection
     content:
-      title: Latest Preprints
+      title: Selected Publications
       text: ""
-      count: 5
+      count: 6
       filters:
         folders:
           - publication
-        publication_type: 'article'
+        author: ''
+        category: ''
+        exclude_featured: false
+        publication_type: ''
+        tag: ''
     design:
-      view: citation
-      columns: '1'
+      view: card
+      columns: '3'
   - block: markdown
     content:
       title:
