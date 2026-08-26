@@ -87,7 +87,7 @@ h1, h2, h3, h4 {
   left: 15px;
 }
 
-/* Selected Publications - 이미지만 보이는 카드 (정확한 클래스 기준) */
+/* Selected Publications - 이미지 + 제목/저널/연도 (저자만 숨김) */
 .selected-pubs .section-heading {
   align-items: center !important;
   text-align: center !important;
@@ -108,18 +108,24 @@ h1, h2, h3, h4 {
   margin-bottom: 0 !important;
 }
 
-/* 저자/날짜/저널, 제목, 버튼 숨기고 이미지만 남기기 */
+/* 저자 목록만 숨기기 (제목/저널명/연도는 유지) */
 .selected-pubs .card-simple.view-card .article-metadata,
-.selected-pubs .card-simple.view-card .section-subheading.article-title,
 .selected-pubs .card-simple.view-card .btn-links {
   display: none !important;
+}
+
+/* 제목 스타일 살짝 정리 */
+.selected-pubs .card-simple.view-card .section-subheading.article-title {
+  font-size: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
 }
 
 /* 이미지 프레임 - A4 비율, 잘리지 않고 전체 표시 */
 .selected-pubs .card-simple.view-card .img-hover-zoom {
   display: block;
   width: 100%;
-  aspect-ratio: 210 / 297;  /* A4 용지 비율 */
+  aspect-ratio: 210 / 297;
   overflow: hidden;
   border-radius: 6px;
   background-color: #f8f9fa;
@@ -127,7 +133,7 @@ h1, h2, h3, h4 {
 .selected-pubs .card-simple.view-card .article-banner {
   width: 100% !important;
   height: 100% !important;
-  object-fit: contain !important;  /* cover 대신 contain */
+  object-fit: contain !important;
   object-position: center !important;
 }
 
