@@ -83,9 +83,10 @@ h1, h2, h3, h4 {
 }
 .hero-media img {
   position: relative;
-  top: 30px;    /* 아래로 이동 (숫자 키우면 더 아래로) */
-  left: 15px;   /* 오른쪽으로 이동 (숫자 키우면 더 오른쪽으로) */
+  top: 30px;
+  left: 15px;
 }
+
 /* Selected Publications - 이미지만 보이는 카드 */
 .selected-pubs .row > .section-heading {
   flex: 0 0 100% !important;
@@ -103,27 +104,4 @@ h1, h2, h3, h4 {
   margin-bottom: 0 !important;
 }
 
-/* 저자/날짜/저널명/제목/버튼 전부 숨기고 이미지만 남기기 */
-.selected-pubs .card-simple.view-card .article-metadata,
-.selected-pubs .card-simple.view-card h3,
-.selected-pubs .card-simple.view-card .card-simple-content,
-.selected-pubs .card-simple.view-card .btn,
-.selected-pubs .card-simple.view-card .article-btns {
-  display: none !important;
-}
-
-/* 이미지가 카드의 전부가 되도록 크게, 정사각형 비율로 */
-.selected-pubs .card-simple.view-card img {
-  height: auto;
-  aspect-ratio: 3 / 4;
-  width: 100%;
-  object-fit: cover;
-  object-position: top center;
-  border-radius: 6px;
-  transition: transform 0.2s ease;
-}
-.selected-pubs .card-simple.view-card:hover img {
-  transform: scale(1.03);
-}
-
-@media (max-width: 992px) {
+/* 저자/날짜/저널명/제목/버튼 전부
