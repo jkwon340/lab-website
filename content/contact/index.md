@@ -13,7 +13,7 @@ sections:
       email: jkwon@hanyang.ac.kr
       phone: '02-2220-XXXX'
       address:
-        street: '222 Wangsimni-ro, Advanced Materials Engineering Hall, Room 502'
+        street: '222 Wangsimni-ro'
         city: Seongdong-gu, Seoul
         region: ''
         postcode: '04763'
@@ -22,7 +22,7 @@ sections:
       coordinates:
         latitude: '37.5544819'
         longitude: '127.0452133'
-      directions: Room 502, 5th Floor, Advanced Materials Engineering Hall
+      directions: Room 502, 5th Floor, Advanced Materials Engineering Hall (Bldg 204)
       #office_hours:
       #  - 'Monday 10:00 to 13:00'
       #  - 'Wednesday 09:00 to 10:00'
