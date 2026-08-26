@@ -116,6 +116,12 @@ h1, h2, h3, h4 {
   display: none !important;
 }
 
+/* "January 2026 · " 부분(날짜 + 가운데점) 숨기기 */
+.selected-pubs .card-simple.view-card .article-date,
+.selected-pubs .card-simple.view-card .middot-divider {
+  display: none !important;
+}
+
 /* 남은 날짜/저널명 스타일 정리 */
 .selected-pubs .card-simple.view-card .article-metadata {
   font-size: 0.85rem;
