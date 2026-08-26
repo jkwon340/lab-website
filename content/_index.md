@@ -48,7 +48,7 @@ sections:
     content:
       title: Selected Publications
       text: ""
-      count: 12
+      count: 0
       filters:
         folders:
           - publication
