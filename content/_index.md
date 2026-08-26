@@ -59,7 +59,7 @@ sections:
         tag: 'Selected'
     design:
       view: card
-      columns: '3'
+      columns: '2'
     
   - block: markdown
     content:
