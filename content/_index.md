@@ -59,7 +59,7 @@ sections:
         tag: 'Selected'
     design:
       view: card
-      columns: '2'
+      columns: '1'
       css_class: selected-pubs
     
   - block: markdown
