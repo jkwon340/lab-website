@@ -60,6 +60,7 @@ sections:
     design:
       view: card
       columns: '2'
+      css_class: selected-pubs
     
   - block: markdown
     content:
