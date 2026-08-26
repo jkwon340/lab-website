@@ -108,11 +108,20 @@ h1, h2, h3, h4 {
   margin-bottom: 0 !important;
 }
 
-/* 저자 목록만 숨기기 (제목/저널명/연도는 유지) 
-.selected-pubs .card-simple.view-card .article-metadata,
+/* Selected Publications - 저자만 숨기고 날짜/저널명은 유지 */
+.selected-pubs .card-simple.view-card .article-metadata > div:first-child {
+  display: none !important;
+}
 .selected-pubs .card-simple.view-card .btn-links {
   display: none !important;
-}*/
+}
+
+/* 남은 날짜/저널명 스타일 정리 */
+.selected-pubs .card-simple.view-card .article-metadata {
+  font-size: 0.85rem;
+  color: var(--sim-steel);
+  margin-top: 0.5rem;
+}
 
 /* 제목 스타일 살짝 정리 */
 .selected-pubs .card-simple.view-card .section-subheading.article-title {
