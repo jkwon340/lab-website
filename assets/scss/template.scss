@@ -108,11 +108,11 @@ h1, h2, h3, h4 {
   margin-bottom: 0 !important;
 }
 
-/* 저자 목록만 숨기기 (제목/저널명/연도는 유지) */
+/* 저자 목록만 숨기기 (제목/저널명/연도는 유지) 
 .selected-pubs .card-simple.view-card .article-metadata,
 .selected-pubs .card-simple.view-card .btn-links {
   display: none !important;
-}
+}*/
 
 /* 제목 스타일 살짝 정리 */
 .selected-pubs .card-simple.view-card .section-subheading.article-title {
