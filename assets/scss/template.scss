@@ -142,8 +142,17 @@ h1, h2, h3, h4 {
   align-items: center !important;
   text-align: center !important;
 }
+/* 2. 카드 제목(h3 외 다른 태그도 포함해서 확실히 숨기기) */
+.selected-pubs .card-simple.view-card h1,
+.selected-pubs .card-simple.view-card h2,
+.selected-pubs .card-simple.view-card h3,
+.selected-pubs .card-simple.view-card h4,
+.selected-pubs .card-simple.view-card h5,
+.selected-pubs .card-simple.view-card a:not(:has(img)) {
+  display: none !important;
+}
 
-/* 2. 이미지를 잘리지 않게, 원본 비율 그대로 표시 */
+/* 3. 이미지를 잘리지 않게, 원본 비율 그대로 표시 */
 .selected-pubs .card-simple.view-card img {
   height: auto !important;
   width: 100%;
@@ -151,9 +160,4 @@ h1, h2, h3, h4 {
   object-fit: contain;
   border-radius: 6px;
   transition: transform 0.2s ease;
-}
-
-/* 이미지가 있는 링크(카드 전체를 감싸는 링크)는 유지 */
-.selected-pubs .card-simple.view-card a:has(img) {
-  display: block !important;
 }
