@@ -87,7 +87,11 @@ h1, h2, h3, h4 {
   left: 15px;
 }
 
-/* Selected Publications - 이미지만 보이는 카드 */
+/* Selected Publications - 이미지만 보이는 카드 (정확한 클래스 기준) */
+.selected-pubs .section-heading {
+  align-items: center !important;
+  text-align: center !important;
+}
 .selected-pubs .row > .section-heading {
   flex: 0 0 100% !important;
   max-width: 100% !important;
@@ -104,27 +108,26 @@ h1, h2, h3, h4 {
   margin-bottom: 0 !important;
 }
 
-/* 저자/날짜/저널명/제목/버튼 전부 숨기고 이미지만 남기기 */
+/* 저자/날짜/저널, 제목, 버튼 숨기고 이미지만 남기기 */
 .selected-pubs .card-simple.view-card .article-metadata,
-.selected-pubs .card-simple.view-card h3,
-.selected-pubs .card-simple.view-card .card-simple-content,
-.selected-pubs .card-simple.view-card .btn,
-.selected-pubs .card-simple.view-card .article-btns {
+.selected-pubs .card-simple.view-card .section-subheading.article-title,
+.selected-pubs .card-simple.view-card .btn-links {
   display: none !important;
 }
 
-/* 이미지가 카드의 전부가 되도록 크게, 정사각형 비율로 */
-.selected-pubs .card-simple.view-card img {
-  height: auto;
-  aspect-ratio: 3 / 4;
+/* 이미지 프레임 고정 - 카드마다 같은 비율로 통일 */
+.selected-pubs .card-simple.view-card .img-hover-zoom {
+  display: block;
   width: 100%;
-  object-fit: cover;
-  object-position: top center;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
   border-radius: 6px;
-  transition: transform 0.2s ease;
 }
-.selected-pubs .card-simple.view-card:hover img {
-  transform: scale(1.03);
+.selected-pubs .card-simple.view-card .article-banner {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: top center !important;
 }
 
 @media (max-width: 992px) {
@@ -136,28 +139,4 @@ h1, h2, h3, h4 {
   .selected-pubs .col-lg-8 {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-/* 1. Selected Publications 제목 확실히 가운데 정렬 */
-.selected-pubs .section-heading {
-  align-items: center !important;
-  text-align: center !important;
-}
-/* 2. 카드 제목(h3 외 다른 태그도 포함해서 확실히 숨기기) */
-.selected-pubs .card-simple.view-card h1,
-.selected-pubs .card-simple.view-card h2,
-.selected-pubs .card-simple.view-card h3,
-.selected-pubs .card-simple.view-card h4,
-.selected-pubs .card-simple.view-card h5,
-.selected-pubs .card-simple.view-card a:not(:has(img)) {
-  display: none !important;
-}
-
-/* 3. 이미지를 잘리지 않게, 원본 비율 그대로 표시 */
-.selected-pubs .card-simple.view-card img {
-  height: auto !important;
-  width: 100%;
-  aspect-ratio: auto;
-  object-fit: contain;
-  border-radius: 6px;
-  transition: transform 0.2s ease;
 }
