@@ -121,20 +121,19 @@ h1, h2, h3, h4 {
   margin-bottom: 0.25rem;
 }
 
-/* 이미지 프레임 - A4 비율, 잘리지 않고 전체 표시 */
+/* 이미지 프레임 - 실제 서버 크롭 비율(약 16:9)에 맞춰 빈틈없이 채우기 */
 .selected-pubs .card-simple.view-card .img-hover-zoom {
   display: block;
   width: 100%;
-  aspect-ratio: 210 / 297;
+  aspect-ratio: 808 / 455;
   overflow: hidden;
   border-radius: 6px;
-  background-color: #f8f9fa;
 }
 .selected-pubs .card-simple.view-card .article-banner {
   width: 100% !important;
   height: 100% !important;
-  object-fit: contain !important;
-  object-position: center !important;
+  object-fit: cover !important;
+  object-position: top center !important;
 }
 
 @media (max-width: 992px) {
