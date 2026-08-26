@@ -22,4 +22,6 @@ summary: ""
 tags: ["Selected"]
 featured: false
 url_pdf: "https://doi.org/10.1038/s41928-022-00890-z"
+image:
+  focal_point: "Top"
 ---
