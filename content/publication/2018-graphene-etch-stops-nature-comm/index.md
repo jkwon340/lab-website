@@ -29,4 +29,3 @@ url_pdf: "https://doi.org/10.1038/s41467-018-06524-3"
 image:
   focal_point: "Top"
 ---
-Highlighted by Nature Research Device and Materials Engineering, Yonsei Press, and Donga Science
