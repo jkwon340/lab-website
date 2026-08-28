@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: SIM Lab @ Hanyang # Website name
-baseURL: 'https://simlabathyu.netlify.app' # Website URL
+baseURL: 'https://simlab-hanyang.netlify.app' # Website URL
 
 ############################
 ## LANGUAGE
