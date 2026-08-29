@@ -13,7 +13,7 @@ authors:
   - Hyeon-Jin Shin
   - "Jeehwan Kim*"
   - "Kyung-Eun Byun*"
-date: "2024-01-01"
+date: "2024-04-24"
 doi: "10.1038/s41928-024-01158-4"
 publication_types: ["article-journal"]
 publication: "*Nature Electronics* 7, 356-364 (2024)"

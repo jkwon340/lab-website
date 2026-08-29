@@ -13,7 +13,7 @@ authors:
   - Taejin Choi
   - Kyung-Eun Byun
   - "Changhyun Kim*"
-date: "2025-01-01"
+date: "2025-12-08"
 doi: "10.1109/IEDM50572.2025.11353501"
 publication_types: ["paper-conference"]
 publication: "*2025 IEEE International Electron Devices Meeting (IEDM)*, San Francisco, CA, USA (2025)"

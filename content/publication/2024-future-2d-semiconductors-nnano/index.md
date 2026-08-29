@@ -16,7 +16,7 @@ authors:
   - Sangho Lee
   - "Minsu Seol*"
   - "Jeehwan Kim*"
-date: "2024-01-01"
+date: "2024-07-01"
 doi: "10.1038/s41565-024-01695-1"
 publication_types: ["article-journal"]
 publication: "*Nature Nanotechnology* 19, 895-906 (2024)"

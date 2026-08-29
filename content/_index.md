@@ -43,7 +43,8 @@ sections:
     design:
       view: card
       columns: '1'
-    
+      css_class: latest-news
+
   - block: collection
     content:
       title: Selected Publications

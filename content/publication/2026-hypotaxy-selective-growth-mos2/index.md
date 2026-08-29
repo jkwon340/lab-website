@@ -9,7 +9,7 @@ authors:
   - Huije Ryu
   - "Junyoung Kwon"
   - "Gwan-Hyoung Lee*"
-date: "2026-01-01"
+date: "2026-02-01"
 doi: "10.1002/adfm.202528582"
 publication_types: ["article-journal"]
 publication: "*Advanced Functional Materials* e28582 (2026)"
