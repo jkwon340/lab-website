@@ -12,7 +12,7 @@ authors:
   - Chul-Ho Lee
   - Seongil Im
   - "Gwan-Hyoung Lee*"
-date: "2019-01-01"
+date: "2019-07-17"
 doi: "10.1038/s41598-019-46730-7"
 publication_types: ["article-journal"]
 publication: "*Scientific Reports* 9, 10354 (2019) — Highlighted by Nature Research Device and Materials Engineering"

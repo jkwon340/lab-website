@@ -22,7 +22,7 @@ authors:
   - "Jin-Hong Park*"
   - "Sang Won Kim*"
   - "Jeehwan Kim*"
-date: "2024-01-01"
+date: "2024-12-18"
 doi: "10.1038/s41586-024-08236-9"
 publication_types: ["article-journal"]
 publication: "*Nature* 636, 615-621 (2024)"

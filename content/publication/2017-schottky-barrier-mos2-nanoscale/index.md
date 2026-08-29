@@ -8,7 +8,7 @@ authors:
   - Xu Cui
   - James Hone
   - "Gwan-Hyoung Lee*"
-date: "2017-01-01"
+date: "2017-05-11"
 doi: "10.1039/C7NR01501A"
 publication_types: ["article-journal"]
 publication: "*Nanoscale* 9, 6151-6157 (2017)"

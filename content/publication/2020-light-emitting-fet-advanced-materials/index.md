@@ -13,7 +13,7 @@ authors:
   - James Hone
   - "Chul-Ho Lee*"
   - "Gwan-Hyoung Lee*"
-date: "2020-01-01"
+date: "2020-10-05"
 doi: "10.1002/adma.202003567"
 publication_types: ["article-journal"]
 publication: "*Advanced Materials* 32, 2003567 (2020) — Highlighted as Front Cover Image and by eurekalert, phys.org"

@@ -17,7 +17,7 @@
 
 body,
 h1, h2, h3, h4, h5, h6,
-.navbar-custom,
+#navbar-main,
 button, input, select, textarea {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
 }
@@ -50,12 +50,37 @@ a:hover {
   border-color: var(--sim-primary) !important;
 }
 
-.navbar-custom {
+#navbar-main {
   border-bottom: 3px solid var(--sim-primary);
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.04);
+}
+#navbar-main .navbar-brand {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+#navbar-main .nav-link {
+  font-weight: 600;
+  font-size: 0.92rem;
+  letter-spacing: 0.01em;
+}
+#navbar-main .nav-link.active {
+  color: var(--sim-primary-dark) !important;
 }
 
 h1, h2, h3, h4 {
   color: var(--sim-titanium) !important;
+}
+
+// Pill-shaped, bolder buttons site-wide, matching the Research/People/Publications design language
+.btn {
+  border-radius: 999px !important;
+  font-weight: 600;
+  padding-left: 1.35rem;
+  padding-right: 1.35rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn:hover {
+  transform: translateY(-1px);
 }
 
 .card:hover,
@@ -689,4 +714,65 @@ h1, h2, h3, h4 {
 .pub-filters:focus {
   border-color: var(--sim-primary) !important;
   box-shadow: 0 0 0 3px rgba(14, 116, 144, 0.15) !important;
+}
+
+/* ===========================
+   Homepage sections
+   Ties "Latest News" / "Selected Publications" into the same
+   design language as Research / People / Publications.
+=========================== */
+
+.home-section .section-heading h1 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-weight: 800;
+  color: var(--sim-titanium);
+}
+.home-section .section-heading h1::before {
+  content: '';
+  width: 28px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--sim-primary);
+  display: inline-block;
+  flex: none;
+}
+
+.home-section.wg-collection .card-simple.view-card {
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.07);
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.home-section.wg-collection .card-simple.view-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
+}
+
+.latest-news .card-simple.view-card {
+  padding: 1.5rem 1.75rem;
+}
+.latest-news .card-simple.view-card .img-hover-zoom {
+  border-radius: 8px;
+  overflow: hidden;
+  margin: -1.5rem -1.75rem 1rem;
+  width: calc(100% + 3.5rem);
+}
+.latest-news .card-simple.view-card .section-subheading.article-title {
+  font-size: 1.15rem;
+}
+.latest-news .card-simple.view-card .summary-link,
+.latest-news .card-simple.view-card .summary-link:hover {
+  color: var(--sim-steel) !important;
+}
+
+.selected-pubs .card-simple.view-card {
+  padding: 1rem 1rem 1.25rem;
+}
+.selected-pubs .card-simple.view-card .img-hover-zoom {
+  margin: -1rem -1rem 0;
+  width: calc(100% + 2rem);
+  border-radius: 10px 10px 0 0;
 }

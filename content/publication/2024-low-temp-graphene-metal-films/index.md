@@ -8,7 +8,7 @@ authors:
   - Hyangsook Lee
   - "Junyoung Kwon"
   - "Kyung-Eun Byun*"
-date: "2024-01-01"
+date: "2024-04-02"
 doi: "10.1016/j.matchemphys.2024.129280"
 publication_types: ["article-journal"]
 publication: "*Materials Chemistry and Physics* 318, 129280 (2024)"
