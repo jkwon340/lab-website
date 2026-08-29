@@ -161,3 +161,295 @@ h1, h2, h3, h4 {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+/* ===========================
+   Research page
+   Three pillars grown from one root: Monolithic 3D Integration
+=========================== */
+
+.research-page {
+  --pillar-logic: #22d3ee;
+  --pillar-memory: #a78bfa;
+  --pillar-growth: #fb923c;
+  padding: 0 !important;
+  max-width: none !important;
+  flex: 0 0 100% !important;
+}
+
+.research-page .universal-wrapper,
+.research-page.universal-wrapper {
+  max-width: none;
+  padding: 0;
+}
+
+/* --- Root / vision section --- */
+
+.research-root {
+  background: linear-gradient(155deg, var(--sim-titanium) 0%, #0b1220 100%);
+  color: #e5edf5;
+  padding: 4.5rem 1.5rem 3rem;
+  border-radius: 0 0 28px 28px;
+}
+
+.research-root__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.research-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sim-primary-light);
+  margin-bottom: 0.9rem;
+}
+.research-eyebrow::before {
+  content: '';
+  width: 22px;
+  height: 2px;
+  background: var(--sim-primary-light);
+  display: inline-block;
+}
+
+.research-h1 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1.1rem;
+  color: #ffffff !important;
+}
+
+.research-lede {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+  max-width: 46em;
+}
+.research-lede--muted {
+  color: #94a3b8;
+  font-size: 0.98rem;
+  margin-top: 0.9rem;
+}
+
+.research-root__figure {
+  margin: 0;
+}
+.research-root__figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: #fff;
+}
+.research-root__figure figcaption {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  margin-top: 0.7rem;
+  line-height: 1.5;
+}
+
+.research-stack {
+  max-width: 1140px;
+  margin: 3rem auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.research-stack__bar {
+  height: 6px;
+  border-radius: 999px;
+  opacity: 0.9;
+}
+.research-stack__bar--logic {
+  width: 220px;
+  background: linear-gradient(90deg, var(--pillar-logic), transparent);
+}
+.research-stack__bar--memory {
+  width: 150px;
+  background: linear-gradient(90deg, var(--pillar-memory), transparent);
+}
+.research-stack__bar--growth {
+  width: 90px;
+  background: linear-gradient(90deg, var(--pillar-growth), transparent);
+}
+
+/* --- Pillars section --- */
+
+.research-pillars {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 1rem;
+}
+
+.research-pillars__head {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.research-pillars__head .research-eyebrow {
+  color: var(--sim-primary);
+  justify-content: center;
+}
+.research-pillars__head .research-eyebrow::before {
+  background: var(--sim-primary);
+}
+
+.research-h2 {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-weight: 800;
+  color: var(--sim-titanium) !important;
+}
+.research-h2--light {
+  color: #fff !important;
+}
+
+.research-pillars__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.pillar-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-top: 4px solid var(--accent, var(--sim-primary));
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.pillar-card--logic { --accent: var(--pillar-logic); }
+.pillar-card--memory { --accent: var(--pillar-memory); }
+.pillar-card--growth { --accent: var(--pillar-growth); }
+
+.pillar-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.16), 0 0 0 1px var(--accent);
+}
+
+.pillar-card__media {
+  aspect-ratio: 16 / 10;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+}
+.pillar-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pillar-card__body {
+  padding: 1.4rem 1.5rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.pillar-card__index {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+
+.pillar-card__title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--sim-titanium) !important;
+  margin-bottom: 0.6rem;
+}
+
+.pillar-card__desc {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--sim-steel);
+  margin-bottom: 1.1rem;
+  flex: 1;
+}
+
+.pillar-card__tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0;
+  margin: 0;
+}
+.pillar-card__tags li {
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 0.28rem 0.65rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 14%, white);
+  color: color-mix(in srgb, var(--accent) 65%, black);
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, white);
+}
+
+/* --- CTA banner --- */
+
+.research-cta {
+  max-width: 1200px;
+  margin: 3rem auto 4rem;
+  padding: 0 1.5rem;
+}
+.research-cta__inner {
+  background: linear-gradient(120deg, var(--sim-primary-dark), var(--sim-primary));
+  border-radius: 20px;
+  padding: 2.4rem 2.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  color: #fff;
+}
+.research-cta__inner p {
+  color: #e0f2fe;
+  margin: 0.3rem 0 0;
+}
+.research-cta__actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.research-cta__actions .btn-outline-light {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+.research-cta__actions .btn-outline-light:hover {
+  color: var(--sim-primary-dark) !important;
+  background-color: #fff !important;
+}
+.research-cta__actions .btn-light {
+  color: var(--sim-primary-dark) !important;
+  background-color: #fff !important;
+  border-color: #fff !important;
+}
+.research-cta__actions .btn-light:hover {
+  color: var(--sim-primary-dark) !important;
+  background-color: #e0f2fe !important;
+}
+
+@media (max-width: 900px) {
+  .research-root__grid {
+    grid-template-columns: 1fr;
+  }
+  .research-pillars__grid {
+    grid-template-columns: 1fr;
+  }
+}
