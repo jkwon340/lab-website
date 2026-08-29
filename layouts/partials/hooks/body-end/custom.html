@@ -38,5 +38,17 @@ document.addEventListener('DOMContentLoaded', function () {
       el.innerHTML = html.substring(0, idx);
     }
   });
+
+  // 4) People 카드의 관심분야를 콤마로 나눠 태그(pill) 형태로 표시
+  document.querySelectorAll('.people-widget .people-interests').forEach(function (el) {
+    var items = el.textContent.split(',').map(function (s) { return s.trim(); }).filter(Boolean);
+    el.innerHTML = '';
+    items.forEach(function (item) {
+      var li = document.createElement('li');
+      li.className = 'interest-tag';
+      li.textContent = item;
+      el.appendChild(li);
+    });
+  });
 });
 </script>
