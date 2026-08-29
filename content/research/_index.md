@@ -25,9 +25,44 @@ sections:
                 crystal growth.
               </p>
             </div>
-            <figure class="research-root__figure">
-              <img src="/media/research/vision-monolithic-3d.png" alt="Monolithic 3D integrated architecture stacking on-chip memory tiers directly above silicon logic" loading="lazy">
-              <figcaption>A monolithic 3D chip: memory tiers grown directly above a silicon logic base, connected by dense inter-layer vias.</figcaption>
+            <figure class="research-root__figure research-root__figure--diagram">
+              <svg viewBox="0 0 640 400" role="img" aria-labelledby="m3dTitle" xmlns="http://www.w3.org/2000/svg">
+                <title id="m3dTitle">Diagram of monolithic 3D integration: 2D/oxide memory grown on 2D logic grown on a silicon CMOS base, joined by seamless low-temperature growth interfaces</title>
+                <g>
+                  <polygon points="440,290 440,370 476,350 476,270" fill="#16202c"></polygon>
+                  <polygon points="60,290 440,290 476,270 96,270" fill="#475569"></polygon>
+                  <rect x="60" y="290" width="380" height="80" fill="#334155"></rect>
+                  <text x="250" y="326" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="16" font-weight="700">Si CMOS Logic</text>
+                  <text x="250" y="346" text-anchor="middle" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">Foundation tier</text>
+                </g>
+                <g>
+                  <line x1="100" y1="281" x2="400" y2="281" stroke="#fb923c" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round"></line>
+                  <circle cx="140" cy="281" r="3" fill="#fb923c"></circle>
+                  <circle cx="250" cy="281" r="3" fill="#fb923c"></circle>
+                  <circle cx="360" cy="281" r="3" fill="#fb923c"></circle>
+                </g>
+                <g>
+                  <polygon points="400,208 400,272 436,252 436,188" fill="#0a4a5c"></polygon>
+                  <polygon points="100,208 400,208 436,188 136,188" fill="#22d3ee"></polygon>
+                  <rect x="100" y="208" width="300" height="64" fill="#0e7490"></rect>
+                  <text x="250" y="240" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="15" font-weight="700">2D Logic</text>
+                  <text x="250" y="258" text-anchor="middle" fill="#e0f7fa" font-family="Inter, sans-serif" font-size="11">GAAFET &middot; monolithic CFET</text>
+                </g>
+                <g>
+                  <line x1="140" y1="199" x2="360" y2="199" stroke="#fb923c" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round"></line>
+                  <circle cx="175" cy="199" r="3" fill="#fb923c"></circle>
+                  <circle cx="250" cy="199" r="3" fill="#fb923c"></circle>
+                  <circle cx="325" cy="199" r="3" fill="#fb923c"></circle>
+                </g>
+                <g>
+                  <polygon points="360,134 360,190 396,170 396,114" fill="#5b21b6"></polygon>
+                  <polygon points="140,134 360,134 396,114 176,114" fill="#a78bfa"></polygon>
+                  <rect x="140" y="134" width="220" height="56" fill="#7c3aed"></rect>
+                  <text x="250" y="160" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="14" font-weight="700">2D/Oxide Memory</text>
+                  <text x="250" y="177" text-anchor="middle" fill="#ede9fe" font-family="Inter, sans-serif" font-size="10">FeFET</text>
+                </g>
+              </svg>
+              <figcaption>Monolithic 3D integration, simplified: 2D logic and memory tiers grown seamlessly, layer by layer, directly on a silicon CMOS base &mdash; no bonding, no transfer.</figcaption>
             </figure>
           </div>
 
