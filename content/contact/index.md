@@ -22,7 +22,7 @@ sections:
       coordinates:
         latitude: '37.5544819'
         longitude: '127.0452133'
-      directions: Room 502, 5th Floor, Advanced Materials Engineering Hall (Bldg 204)
+      directions: Room 502, 5th Floor, Advanced Materials & Chemical Engineering Building (Bldg 204)
       #office_hours:
       #  - 'Monday 10:00 to 13:00'
       #  - 'Wednesday 09:00 to 10:00'
