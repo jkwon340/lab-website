@@ -10,7 +10,7 @@ sections:
       title: Contact
       text: |-
         Thank you for your interest in the Semiconductor Integrated Materials (SIM) Lab. If you are interested in joining our lab, collaborating on research, or have any other inquiries, please contact us at the information below.
-      email: jkwon@hanyang.ac.kr
+      email: jkwon at hanyang.ac.kr
       phone: '02-2220-0381'
       address:
         street: '222 Wangsimni-ro'
