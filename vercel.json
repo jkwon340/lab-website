@@ -3,3 +3,8 @@
   "outputDirectory": "public",
   "framework": null
 }
+{
+  "buildCommand": "curl -fsSL https://golang.org/dl/go1.22.0.linux-amd64.tar.gz | tar -C /tmp -xz && export PATH=$PATH:/tmp/go/bin && hugo --gc --minify --buildFuture",
+  "outputDirectory": "public",
+  "framework": null
+}
