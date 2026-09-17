@@ -1,0 +1,5 @@
+{
+  "buildCommand": "hugo --gc --minify --buildFuture",
+  "outputDirectory": "public",
+  "framework": null
+}
