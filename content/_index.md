@@ -3,22 +3,48 @@
 title:
 date: 2022-10-24
 type: landing
+design:
+  css_class: home
 sections:
   - block: hero
     content:
-      title: |
-        SIM Lab
-      text: |
-        Semiconductor Integration Materials Laboratory, Hanyang University
-
-        The SIM Lab at Hanyang University focuses on materials innovation to enable next-generation semiconductor integration technologies, ranging from novel 2D materials to monolithic 3D architectures.
+      slides:
+        - eyebrow: Hanyang University
+          title: |
+            Semiconductor Integration<br>Materials Laboratory
+          lead: |
+            Materials innovation for next-generation semiconductor integration — from novel 2D materials to monolithic 3D architectures.
+          accent: cyan
+          cta_label: Meet the Team
+          cta_url: ./people/
+          cta_alt_label: Explore Research
+          cta_alt_url: ./research/
+        - eyebrow: Research Pillar 01
+          title: |
+            Future Logic<br>Devices
+          lead: |
+            Wafer-scale 2D GAAFETs and monolithically stacked CFETs, pushing logic scaling beyond the limits of silicon.
+          accent: cyan
+          cta_label: Explore Research
+          cta_url: ./research/
+        - eyebrow: Research Pillar 02
+          title: |
+            Future Memory<br>Devices
+          lead: |
+            Ferroelectric FeFETs and oxide memory cells, grown directly on top of logic for dense, low-power storage.
+          accent: violet
+          cta_label: Explore Research
+          cta_url: ./research/
+        - eyebrow: Research Pillar 03
+          title: |
+            Low-Temperature<br>Growth
+          lead: |
+            Single-crystal 2D materials grown below 400&deg;C — the enabling technology behind monolithic integration.
+          accent: amber
+          cta_label: Explore Research
+          cta_url: ./research/
       image:
         filename: Lab main.png
-        filters:
-          brightness: 0.55
-      cta:
-        url: ./people/
-        label: Meet the Team
     design:
       is_fullscreen: true
       background:

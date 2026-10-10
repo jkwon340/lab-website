@@ -776,3 +776,348 @@ h1, h2, h3, h4 {
   width: calc(100% + 2rem);
   border-radius: 10px 10px 0 0;
 }
+
+/* ===========================
+   Navbar brand lockup
+   Icon mark + full lab name (responsive), replacing "SIM Lab @ Hanyang"
+=========================== */
+
+.navbar-brand-custom {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.6rem;
+}
+.navbar-mark {
+  display: inline-flex;
+  color: var(--sim-primary);
+  flex: none;
+}
+.navbar-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+.navbar-brand-full {
+  font-weight: 800;
+  font-size: 0.96rem;
+  color: var(--sim-titanium);
+  letter-spacing: -0.01em;
+  max-width: 15em;
+  white-space: normal;
+}
+.navbar-brand-short {
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--sim-primary);
+}
+
+/* ===========================
+   Homepage hero carousel
+   Full-bleed image, overlay slides, dots/arrows, scroll cue
+=========================== */
+
+body.home {
+  --hero-accent: #22d3ee;
+}
+
+/* Break the hero section out of Bootstrap's centered .container so it is truly full-bleed */
+#section-hero.home-section {
+  padding: 0 !important;
+}
+#section-hero .container {
+  max-width: none;
+  width: 100%;
+  padding: 0;
+}
+
+.sim-hero {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: var(--sim-titanium);
+}
+
+.sim-hero__bg {
+  position: absolute;
+  inset: -1%;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.02);
+}
+.sim-hero__scrim {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(100deg, rgba(6, 10, 18, 0.96) 0%, rgba(6, 10, 18, 0.9) 38%, rgba(6, 10, 18, 0.72) 65%, rgba(6, 10, 18, 0.82) 100%),
+    linear-gradient(0deg, rgba(6, 10, 18, 0.5) 0%, rgba(6, 10, 18, 0.15) 35%, rgba(6, 10, 18, 0.35) 100%);
+}
+.sim-hero__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.sim-hero__slides {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.sim-hero__slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 1s;
+  pointer-events: none;
+}
+.sim-hero__slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.sim-hero__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 7rem 2.5rem 6rem;
+}
+
+.sim-hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--hero-accent);
+  margin-bottom: 1.3rem;
+}
+.sim-hero__eyebrow::before {
+  content: '';
+  width: 32px;
+  height: 2px;
+  background: currentColor;
+  display: inline-block;
+}
+
+.sim-hero__title {
+  font-size: clamp(2.3rem, 5.2vw, 4.4rem);
+  font-weight: 800;
+  line-height: 1.06;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fff !important;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1.4rem;
+  max-width: 16em;
+}
+
+.sim-hero__lead {
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 38em;
+  margin-bottom: 2.2rem;
+}
+
+.sim-hero__ctas {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+}
+.sim-hero__cta-alt {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+.sim-hero__cta-alt:hover {
+  color: var(--hero-accent) !important;
+}
+
+/* Per-slide accent colors */
+.sim-hero__slide[data-accent="cyan"] { --hero-accent: #22d3ee; }
+.sim-hero__slide[data-accent="violet"] { --hero-accent: #a78bfa; }
+.sim-hero__slide[data-accent="amber"] { --hero-accent: #fb923c; }
+
+/* Dots + arrows */
+.sim-hero__controls {
+  position: absolute;
+  left: 50%;
+  bottom: 2.75rem;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.sim-hero__dots {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.sim-hero__dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.sim-hero__dot.is-active {
+  width: 26px;
+  background: var(--hero-accent);
+}
+.sim-hero__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+.sim-hero__arrow:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-1px);
+}
+
+/* Scroll cue */
+.sim-hero__scrollcue {
+  position: absolute;
+  right: 2.75rem;
+  bottom: 2.75rem;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.sim-hero__scrollcue-line {
+  position: relative;
+  width: 1px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+}
+.sim-hero__scrollcue-line::after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  animation: sim-hero-scrollcue 2s ease-in-out infinite;
+}
+@keyframes sim-hero-scrollcue {
+  0% { top: -100%; }
+  60% { top: 100%; }
+  100% { top: 100%; }
+}
+
+@media (max-width: 768px) {
+  .sim-hero {
+    min-height: 92vh;
+  }
+  .sim-hero__inner {
+    padding: 6.5rem 1.5rem 7.5rem;
+  }
+  .sim-hero__title {
+    max-width: none;
+  }
+  .sim-hero__scrollcue {
+    display: none;
+  }
+  .sim-hero__controls {
+    bottom: 1.75rem;
+    gap: 1rem;
+  }
+  .sim-hero__arrow {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+/* ===========================
+   Homepage navbar overlay
+   Transparent over the hero, solid once scrolled past it
+=========================== */
+
+body.home .page-header.header--fixed {
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  transition: background 0.35s ease, box-shadow 0.35s ease;
+}
+body.home #navbar-main {
+  background: transparent !important;
+  border-bottom-color: transparent;
+  box-shadow: none;
+  transition: background 0.35s ease, border-color 0.35s ease;
+}
+body.home #navbar-main .nav-link,
+body.home #navbar-main .navbar-brand-full,
+body.home #navbar-main .navbar-brand-short,
+body.home #navbar-main .navbar-mark,
+body.home #navbar-main .js-search i,
+body.home #navbar-main .fa-moon,
+body.home #navbar-main .navbar-toggler i {
+  color: #fff !important;
+}
+body.home #navbar-main .nav-link.active {
+  color: #fff !important;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+body.home.navbar-scrolled .page-header.header--fixed {
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+}
+body.home.navbar-scrolled #navbar-main {
+  background: #fff !important;
+  border-bottom: 3px solid var(--sim-primary);
+}
+body.home.navbar-scrolled #navbar-main .nav-link,
+body.home.navbar-scrolled #navbar-main .navbar-brand-full,
+body.home.navbar-scrolled #navbar-main .navbar-mark,
+body.home.navbar-scrolled #navbar-main .js-search i,
+body.home.navbar-scrolled #navbar-main .fa-moon,
+body.home.navbar-scrolled #navbar-main .navbar-toggler i {
+  color: var(--sim-titanium) !important;
+}
+body.home.navbar-scrolled #navbar-main .navbar-brand-short {
+  color: var(--sim-primary) !important;
+}
+body.home.navbar-scrolled #navbar-main .nav-link.active {
+  color: var(--sim-primary-dark) !important;
+  text-decoration: none;
+}
