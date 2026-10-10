@@ -23,4 +23,6 @@ summary: ""
 tags: ["Selected"]
 featured: false
 url_pdf: "https://doi.org/10.1002/adma.201903424"
+image:
+  focal_point: "Top"
 ---

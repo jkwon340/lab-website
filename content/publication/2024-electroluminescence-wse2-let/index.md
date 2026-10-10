@@ -27,4 +27,6 @@ summary: ""
 tags: ["Selected"]
 featured: false
 url_pdf: "https://doi.org/10.1002/adma.202310498"
+image:
+  focal_point: "Top"
 ---
