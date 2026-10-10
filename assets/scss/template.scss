@@ -805,7 +805,7 @@ h1, h2, h3, h4 {
 =========================== */
 
 body.home {
-  --hero-accent: #22d3ee;
+  --hero-accent: #34d399;
 }
 
 /* Break the hero section out of Bootstrap's centered .container so it is truly full-bleed */
@@ -937,6 +937,7 @@ body.home {
 }
 
 /* Per-slide accent colors */
+.sim-hero__slide[data-accent="emerald"] { --hero-accent: #34d399; }
 .sim-hero__slide[data-accent="cyan"] { --hero-accent: #22d3ee; }
 .sim-hero__slide[data-accent="violet"] { --hero-accent: #a78bfa; }
 .sim-hero__slide[data-accent="amber"] { --hero-accent: #fb923c; }
