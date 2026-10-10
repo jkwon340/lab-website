@@ -723,20 +723,8 @@ h1, h2, h3, h4 {
 =========================== */
 
 .home-section .section-heading h1 {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.65rem;
   font-weight: 400;
   color: var(--sim-titanium);
-}
-.home-section .section-heading h1::before {
-  content: '';
-  width: 28px;
-  height: 3px;
-  border-radius: 999px;
-  background: var(--sim-primary);
-  display: inline-block;
-  flex: none;
 }
 
 .home-section.wg-collection .card-simple.view-card {
