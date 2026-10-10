@@ -14,7 +14,7 @@ sections:
             Semiconductor Integration<br>Materials Laboratory
           lead: |
             Materials innovation for next-generation semiconductor integration — from novel 2D materials to monolithic 3D architectures.
-          accent: cyan
+          accent: emerald
           cta_label: Meet the Team
           cta_url: ./people/
           cta_alt_label: Explore Research
