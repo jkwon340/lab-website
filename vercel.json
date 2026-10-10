@@ -1,10 +1,5 @@
 {
-  "buildCommand": "hugo --gc --minify --buildFuture",
-  "outputDirectory": "public",
-  "framework": null
-}
-{
-  "buildCommand": "curl -fsSL https://golang.org/dl/go1.22.0.linux-amd64.tar.gz | tar -C /tmp -xz && export PATH=$PATH:/tmp/go/bin && hugo --gc --minify --buildFuture",
+  "buildCommand": "mkdir -p \"$HOME/.local/bin\" && curl -sLJO \"https://github.com/gohugoio/hugo/releases/download/v0.140.2/hugo_extended_0.140.2_Linux-64bit.tar.gz\" && tar -C \"$HOME/.local/bin\" -xf \"hugo_extended_0.140.2_Linux-64bit.tar.gz\" && export PATH=\"$HOME/.local/bin:$PATH\" && hugo --gc --minify --buildFuture",
   "outputDirectory": "public",
   "framework": null
 }

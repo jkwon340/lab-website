@@ -911,15 +911,15 @@ body.home {
 }
 
 .sim-hero__title {
-  font-size: clamp(2.3rem, 5.2vw, 4.4rem);
+  font-size: clamp(1.7rem, 3.4vw, 3rem);
   font-weight: 800;
-  line-height: 1.06;
-  letter-spacing: -0.01em;
+  line-height: 1.15;
+  letter-spacing: -0.005em;
   text-transform: uppercase;
   color: #fff !important;
   text-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
-  margin-bottom: 1.4rem;
-  max-width: 16em;
+  margin-bottom: 1.3rem;
+  max-width: 18em;
 }
 
 .sim-hero__lead {
