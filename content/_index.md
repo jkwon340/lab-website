@@ -9,7 +9,7 @@ sections:
   - block: hero
     content:
       slides:
-        - eyebrow: Hanyang University
+        - eyebrow: Kwon Group at Hanyang University
           title: |
             Semiconductor Integration<br>Materials Laboratory
           lead: |
