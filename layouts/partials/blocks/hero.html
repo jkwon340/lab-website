@@ -1,0 +1,65 @@
+{{/* Custom SIM Lab hero: full-bleed image carousel with overlay text. */}}
+
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+{{ $slides := $block.content.slides }}
+{{ if not $slides }}
+  {{ $slides = slice (dict "eyebrow" "" "title" $block.content.title "lead" $block.content.text "cta_label" $block.content.cta.label "cta_url" $block.content.cta.url "accent" "cyan") }}
+{{ end }}
+
+{{ $image := "" }}
+{{ with $block.content.image.filename }}
+  {{ $image = resources.Get (printf "media/%s" .) }}
+{{ end }}
+
+<div class="sim-hero" id="sim-hero">
+  {{ with $image }}
+    {{ $bg := . }}
+    {{ if ne $bg.MediaType.SubType "svg" }}{{ $bg = $bg.Fit "2200x2200 webp" }}{{ end }}
+    <div class="sim-hero__bg" style="background-image:url('{{ $bg.RelPermalink }}');"></div>
+  {{ end }}
+  <div class="sim-hero__scrim"></div>
+  <div class="sim-hero__grid" aria-hidden="true"></div>
+
+  <div class="sim-hero__slides">
+    {{ range $i, $slide := $slides }}
+    <div class="sim-hero__slide{{ if eq $i 0 }} is-active{{ end }}" data-accent="{{ $slide.accent | default "cyan" }}" data-index="{{ $i }}">
+      <div class="sim-hero__inner">
+        {{ with $slide.eyebrow }}<span class="sim-hero__eyebrow">{{ . }}</span>{{ end }}
+        <h1 class="sim-hero__title">{{ $slide.title | markdownify }}</h1>
+        {{ with $slide.lead }}<p class="sim-hero__lead">{{ . | markdownify }}</p>{{ end }}
+        <div class="sim-hero__ctas">
+          {{ with $slide.cta_url }}
+          <a href="{{ . | relLangURL }}" class="btn btn-light btn-lg">{{ $slide.cta_label | default "Learn more" }}</a>
+          {{ end }}
+          {{ with $slide.cta_alt_url }}
+          <a href="{{ . | relLangURL }}" class="sim-hero__cta-alt">{{ $slide.cta_alt_label | default "Learn more" }} <i class="fas fa-angle-right" aria-hidden="true"></i></a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+
+  {{ if gt (len $slides) 1 }}
+  <div class="sim-hero__controls">
+    <button type="button" class="sim-hero__arrow sim-hero__arrow--prev" aria-label="Previous slide">
+      <i class="fas fa-chevron-left" aria-hidden="true"></i>
+    </button>
+    <div class="sim-hero__dots" role="tablist" aria-label="Hero slides">
+      {{ range $i, $slide := $slides }}
+      <button type="button" class="sim-hero__dot{{ if eq $i 0 }} is-active{{ end }}" data-slide="{{ $i }}" role="tab" aria-label="Go to slide {{ add $i 1 }}"></button>
+      {{ end }}
+    </div>
+    <button type="button" class="sim-hero__arrow sim-hero__arrow--next" aria-label="Next slide">
+      <i class="fas fa-chevron-right" aria-hidden="true"></i>
+    </button>
+  </div>
+  {{ end }}
+
+  <div class="sim-hero__scrollcue" aria-hidden="true">
+    <span class="sim-hero__scrollcue-line"></span>
+    <span class="sim-hero__scrollcue-label">Scroll</span>
+  </div>
+</div>
