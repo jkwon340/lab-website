@@ -216,12 +216,16 @@ h1, h2, h3, h4 {
   border-radius: 0 0 28px 28px;
 }
 
-.research-root__grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 3rem;
-  align-items: center;
-  max-width: 1140px;
+.research-root__copy--centered {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+.research-root__copy--centered .research-eyebrow {
+  justify-content: center;
+}
+.research-root__copy--centered .research-lede {
+  max-width: none;
   margin: 0 auto;
 }
 
@@ -264,32 +268,183 @@ h1, h2, h3, h4 {
   margin-top: 0.9rem;
 }
 
-.research-root__figure {
-  margin: 0;
+/* --- Interactive diagram with pillar callouts --- */
+
+.research-diagram {
+  position: relative;
+  max-width: 1200px;
+  margin: 3rem auto 0;
+  padding: 0 1rem;
 }
-.research-root__figure img {
+
+.research-diagram__stage {
+  position: relative;
+  max-width: 760px;
+  margin: 0 auto;
+  aspect-ratio: 1400 / 1134;
+}
+
+.research-diagram__image {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
   border-radius: 14px;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
   border: 1px solid rgba(148, 163, 184, 0.25);
-  background: #fff;
-}
-.research-root__figure--diagram {
-  padding: 1.5rem 1rem 0;
+  background: #0b1220;
   filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.4));
 }
-.research-root__figure--diagram svg {
+
+.research-diagram__lines {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  pointer-events: none;
+  display: none;
 }
-.research-root__figure figcaption {
+.research-diagram__line {
+  stroke-width: 1.5;
+  stroke-dasharray: 3 4;
+  stroke-linecap: round;
+  opacity: 0.85;
+}
+.research-diagram__line--memory { stroke: var(--pillar-memory); }
+.research-diagram__line--logic { stroke: var(--pillar-logic); }
+.research-diagram__line--growth { stroke: var(--pillar-growth); }
+
+.research-diagram__dot {
+  display: none;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 3px rgba(11, 18, 32, 0.85), 0 0 10px 2px currentColor;
+  pointer-events: none;
+}
+.research-diagram__dot--memory { background: var(--pillar-memory); color: var(--pillar-memory); }
+.research-diagram__dot--logic { background: var(--pillar-logic); color: var(--pillar-logic); }
+.research-diagram__dot--growth { background: var(--pillar-growth); color: var(--pillar-growth); }
+
+.research-diagram__callout {
+  display: none;
+  align-items: center;
+  gap: 0.55rem;
+  position: absolute;
+  width: 196px;
+  padding: 0.6rem 0.85rem;
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-left: 3px solid var(--accent, var(--sim-primary-light));
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none !important;
+  backdrop-filter: blur(6px);
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+.research-diagram__callout:hover {
+  transform: translateY(-2px);
+  background: rgba(15, 23, 42, 1);
+  border-color: var(--accent, var(--sim-primary-light));
+}
+.research-diagram__callout-index {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--accent, var(--sim-primary-light));
+  flex: none;
+}
+.research-diagram__callout-label {
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.research-diagram__callout--memory {
+  --accent: var(--pillar-memory);
+  top: 11%;
+  left: 0;
+}
+.research-diagram__callout--logic {
+  --accent: var(--pillar-logic);
+  top: 46%;
+  right: 0;
+}
+.research-diagram__callout--growth {
+  --accent: var(--pillar-growth);
+  top: 72%;
+  left: 0;
+}
+
+.research-diagram__hint {
+  text-align: center;
   font-size: 0.82rem;
   color: #94a3b8;
-  margin-top: 0.7rem;
-  line-height: 1.5;
+  margin: 1.1rem auto 0;
+  display: none;
 }
+
+@media (min-width: 1150px) {
+  .research-diagram {
+    padding: 0 240px;
+  }
+  .research-diagram__lines {
+    display: block;
+  }
+  .research-diagram__callout {
+    display: flex;
+  }
+  .research-diagram__dot {
+    display: block;
+  }
+  .research-diagram__hint {
+    display: block;
+  }
+}
+
+.research-diagram__callouts-mobile {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  max-width: 640px;
+  margin: 1.25rem auto 0;
+}
+
+@media (max-width: 1149px) {
+  .research-diagram__stage {
+    max-width: 640px;
+  }
+  .research-diagram__callouts-mobile {
+    display: flex;
+  }
+}
+.research-diagram__callouts-mobile a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  color: #fff !important;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+.research-diagram__callouts-mobile a span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex: none;
+}
+.research-diagram__callouts-mobile a.callout-mobile--memory { --accent: var(--pillar-memory); }
+.research-diagram__callouts-mobile a.callout-mobile--logic { --accent: var(--pillar-logic); }
+.research-diagram__callouts-mobile a.callout-mobile--growth { --accent: var(--pillar-growth); }
 
 .research-stack {
   max-width: 1140px;
@@ -480,12 +635,16 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 900px) {
-  .research-root__grid {
-    grid-template-columns: 1fr;
-  }
   .research-pillars__grid {
     grid-template-columns: 1fr;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.pillar-card {
+  scroll-margin-top: 100px;
 }
 
 /* ===========================

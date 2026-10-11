@@ -10,60 +10,48 @@ sections:
       subtitle:
       text: |
         <section class="research-root">
-          <div class="research-root__grid">
-            <div class="research-root__copy">
-              <span class="research-eyebrow">Our foundation</span>
-              <h1 class="research-h1">Monolithic 3D Integration</h1>
-              <p class="research-lede">
-                SIM Lab is rooted in a single conviction: the next leap in computing performance will not come from
-                shrinking transistors alone, but from stacking them &mdash; logic on memory, tier on tier, grown
-                directly and seamlessly rather than bonded together. We develop the materials, growth techniques,
-                and device architectures needed to make that vision real.
-              </p>
-              <p class="research-lede research-lede--muted">
-                From this root grow three interconnected research directions, spanning device physics to
-                crystal growth.
-              </p>
+          <div class="research-root__copy research-root__copy--centered">
+            <span class="research-eyebrow">Our foundation</span>
+            <h1 class="research-h1">Monolithic 3D Integration</h1>
+            <p class="research-lede">
+              SIM Lab is rooted in a single conviction: the next leap in computing performance will not come from
+              shrinking transistors alone, but from stacking them &mdash; logic on memory, tier on tier, grown
+              directly and seamlessly rather than bonded together. We develop the materials, growth techniques,
+              and device architectures needed to make that vision real.
+            </p>
+          </div>
+
+          <div class="research-diagram">
+            <div class="research-diagram__stage">
+              <img class="research-diagram__image" src="/media/research/monolithic-3d-diagram.webp" alt="Exploded isometric diagram of monolithic 3D integration: a sensor/photonics tier, capless main memory, monolithic logic, and silicon logic tiers stacked and interconnected with a back-side power delivery network" loading="lazy">
             </div>
-            <figure class="research-root__figure research-root__figure--diagram">
-              <svg viewBox="0 0 640 400" role="img" aria-labelledby="m3dTitle" xmlns="http://www.w3.org/2000/svg">
-                <title id="m3dTitle">Diagram of monolithic 3D integration: 2D/oxide memory grown on 2D logic grown on a silicon CMOS base, joined by seamless low-temperature growth interfaces</title>
-                <g>
-                  <polygon points="440,290 440,370 476,350 476,270" fill="#16202c"></polygon>
-                  <polygon points="60,290 440,290 476,270 96,270" fill="#475569"></polygon>
-                  <rect x="60" y="290" width="380" height="80" fill="#334155"></rect>
-                  <text x="250" y="326" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="16" font-weight="700">Si CMOS Logic</text>
-                  <text x="250" y="346" text-anchor="middle" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">Foundation tier</text>
-                </g>
-                <g>
-                  <line x1="100" y1="281" x2="400" y2="281" stroke="#fb923c" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round"></line>
-                  <circle cx="140" cy="281" r="3" fill="#fb923c"></circle>
-                  <circle cx="250" cy="281" r="3" fill="#fb923c"></circle>
-                  <circle cx="360" cy="281" r="3" fill="#fb923c"></circle>
-                </g>
-                <g>
-                  <polygon points="400,208 400,272 436,252 436,188" fill="#0a4a5c"></polygon>
-                  <polygon points="100,208 400,208 436,188 136,188" fill="#22d3ee"></polygon>
-                  <rect x="100" y="208" width="300" height="64" fill="#0e7490"></rect>
-                  <text x="250" y="240" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="15" font-weight="700">2D Logic</text>
-                  <text x="250" y="258" text-anchor="middle" fill="#e0f7fa" font-family="Inter, sans-serif" font-size="11">GAAFET &middot; monolithic CFET</text>
-                </g>
-                <g>
-                  <line x1="140" y1="199" x2="360" y2="199" stroke="#fb923c" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round"></line>
-                  <circle cx="175" cy="199" r="3" fill="#fb923c"></circle>
-                  <circle cx="250" cy="199" r="3" fill="#fb923c"></circle>
-                  <circle cx="325" cy="199" r="3" fill="#fb923c"></circle>
-                </g>
-                <g>
-                  <polygon points="360,134 360,190 396,170 396,114" fill="#5b21b6"></polygon>
-                  <polygon points="140,134 360,134 396,114 176,114" fill="#a78bfa"></polygon>
-                  <rect x="140" y="134" width="220" height="56" fill="#7c3aed"></rect>
-                  <text x="250" y="160" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="14" font-weight="700">2D/Oxide Memory</text>
-                  <text x="250" y="177" text-anchor="middle" fill="#ede9fe" font-family="Inter, sans-serif" font-size="10">FeFET</text>
-                </g>
-              </svg>
-              <figcaption>Monolithic 3D integration, simplified: 2D logic and memory tiers grown seamlessly, layer by layer, directly on a silicon CMOS base &mdash; no bonding, no transfer.</figcaption>
-            </figure>
+            <svg class="research-diagram__lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <line class="research-diagram__line research-diagram__line--memory" x1="4" y1="17" x2="20" y2="29" vector-effect="non-scaling-stroke"></line>
+              <line class="research-diagram__line research-diagram__line--logic" x1="96" y1="52" x2="80" y2="59" vector-effect="non-scaling-stroke"></line>
+              <line class="research-diagram__line research-diagram__line--growth" x1="4" y1="78" x2="20" y2="76" vector-effect="non-scaling-stroke"></line>
+            </svg>
+            <span class="research-diagram__dot research-diagram__dot--memory" style="left:20%; top:29%;" aria-hidden="true"></span>
+            <span class="research-diagram__dot research-diagram__dot--logic" style="left:80%; top:59%;" aria-hidden="true"></span>
+            <span class="research-diagram__dot research-diagram__dot--growth" style="left:20%; top:76%;" aria-hidden="true"></span>
+            <a class="research-diagram__callout research-diagram__callout--memory" href="#pillar-memory">
+              <span class="research-diagram__callout-index">02</span>
+              <span class="research-diagram__callout-label">Future Memory Devices</span>
+            </a>
+            <a class="research-diagram__callout research-diagram__callout--logic" href="#pillar-logic">
+              <span class="research-diagram__callout-index">01</span>
+              <span class="research-diagram__callout-label">Future Logic Devices</span>
+            </a>
+            <a class="research-diagram__callout research-diagram__callout--growth" href="#pillar-growth">
+              <span class="research-diagram__callout-index">03</span>
+              <span class="research-diagram__callout-label">Low-Temperature Growth</span>
+            </a>
+          </div>
+          <p class="research-diagram__hint">Tap a tier above to jump to the research pillar behind it.</p>
+
+          <div class="research-diagram__callouts-mobile">
+            <a class="callout-mobile--logic" href="#pillar-logic"><span></span>Future Logic Devices</a>
+            <a class="callout-mobile--memory" href="#pillar-memory"><span></span>Future Memory Devices</a>
+            <a class="callout-mobile--growth" href="#pillar-growth"><span></span>Low-Temperature Growth</a>
           </div>
 
           <div class="research-stack" aria-hidden="true">
@@ -80,7 +68,7 @@ sections:
           </div>
 
           <div class="research-pillars__grid">
-            <article class="pillar-card pillar-card--logic">
+            <article class="pillar-card pillar-card--logic" id="pillar-logic">
               <div class="pillar-card__media">
                 <img src="/media/research/theme-logic-gaafet.png" alt="Schematic of a monolithically stacked 2D CFET with MoS2 and WSe2 gate-all-around channels" loading="lazy">
               </div>
@@ -99,7 +87,7 @@ sections:
                 </ul>
               </div>
             </article>
-            <article class="pillar-card pillar-card--memory">
+            <article class="pillar-card pillar-card--memory" id="pillar-memory">
               <div class="pillar-card__media">
                 <img src="/media/research/theme-memory-fefet.png" alt="Cross-section and polarization hysteresis of a 2D-channel HZO ferroelectric FeFET memory device" loading="lazy">
               </div>
@@ -118,7 +106,7 @@ sections:
                 </ul>
               </div>
             </article>
-            <article class="pillar-card pillar-card--growth">
+            <article class="pillar-card pillar-card--growth" id="pillar-growth">
               <div class="pillar-card__media">
                 <img src="/media/research/theme-lowtemp-growth.png" alt="Comparison of conventional high-temperature 3D integration versus seamless low-temperature single-crystal growth" loading="lazy">
               </div>
