@@ -23,6 +23,12 @@ experience:
   - title: Assistant Professor
     company: Division of Materials Science and Engineering, Hanyang University, Seoul, Korea
     date: Sep 2026 – Present
+  - title: Joint Faculty
+    company: Department of Semiconductor Engineering (Graduate School), Hanyang University, Seoul, Korea
+    date: Sep 2026 – Present
+  - title: Joint Faculty
+    company: Department of Electrical Engineering, Hanyang University, Seoul, Korea
+    date: Sep 2026 – Present
   - title: Staff Researcher
     company: Samsung Advanced Institute of Technology (SAIT), Samsung Electronics Co., Ltd., Suwon, Korea
     date: Mar 2021 – Aug 2026
