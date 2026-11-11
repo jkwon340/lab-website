@@ -28,6 +28,9 @@ button, input, select, textarea {
   --sim-primary-light: #22d3ee;
   --sim-steel: #475569;
   --sim-titanium: #1e293b;
+  --pillar-logic: #22d3ee;
+  --pillar-memory: #a78bfa;
+  --pillar-growth: #fb923c;
 }
 
 a,
@@ -193,9 +196,6 @@ h1, h2, h3, h4 {
 =========================== */
 
 .research-page {
-  --pillar-logic: #22d3ee;
-  --pillar-memory: #a78bfa;
-  --pillar-growth: #fb923c;
   padding: 0 !important;
   max-width: none !important;
   flex: 0 0 100% !important;
@@ -673,20 +673,26 @@ html {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--sim-primary);
+  color: var(--accent, var(--sim-primary));
   margin: 2.5rem 0 1.5rem;
 }
 .people-widget h2::before {
   content: '';
   width: 22px;
   height: 2px;
-  background: var(--sim-primary);
+  background: var(--accent, var(--sim-primary));
   display: inline-block;
 }
+
+/* Subtle per-group accent colors */
+.people-widget .people-group--principal-investigator { --accent: var(--pillar-logic); }
+.people-widget .people-group--grad-students { --accent: var(--pillar-memory); }
+.people-widget .people-group--undergraduate-students { --accent: var(--pillar-growth); }
 
 .people-widget .people-person {
   background: #fff;
   border: 1px solid rgba(15, 23, 42, 0.08);
+  border-top: 3px solid var(--accent, var(--sim-primary-light));
   border-radius: 16px;
   padding: 2rem 1.75rem 1.75rem;
   box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
@@ -703,7 +709,7 @@ html {
   max-width: 148px !important;
   height: 148px !important;
   object-fit: cover;
-  box-shadow: 0 0 0 4px #fff, 0 0 0 6px var(--sim-primary-light), 0 10px 24px rgba(14, 116, 144, 0.25);
+  box-shadow: 0 0 0 4px #fff, 0 0 0 6px var(--accent, var(--sim-primary-light)), 0 10px 24px rgba(14, 116, 144, 0.25);
   margin-bottom: 1.1rem;
 }
 
