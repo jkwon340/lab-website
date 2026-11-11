@@ -59,7 +59,7 @@ interests:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:jkwon@hanyang.ac.kr'
+    link: 'https://mail.google.com/mail/?view=cm&fs=1&to=jkwon@hanyang.ac.kr'
   - icon: google-scholar
     icon_pack: ai
     link: 'https://scholar.google.com/citations?user=ZVKi9wsAAAAJ'
