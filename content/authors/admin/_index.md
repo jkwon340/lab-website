@@ -16,12 +16,17 @@ role: Assistant Professor
 organizations:
   - name: Division of Materials Science and Engineering, Hanyang University
     url: 'https://mse.hanyang.ac.kr/'
+  - name: Department of Semiconductor Engineering (Graduate School), Hanyang University
+    url: 'https://semicon.hanyang.ac.kr/'
 
 # Short bio (displayed in user profile at end of posts)
 bio: Assistant Professor working on 2D semiconductor materials and monolithic 3D integration for future logic devices.
 experience:
   - title: Assistant Professor
     company: Division of Materials Science and Engineering, Hanyang University, Seoul, Korea
+    date: Sep 2026 – Present
+  - title: Joint Faculty
+    company: Department of Semiconductor Engineering (Graduate School), Hanyang University, Seoul, Korea
     date: Sep 2026 – Present
   - title: Staff Researcher
     company: Samsung Advanced Institute of Technology (SAIT), Samsung Electronics Co., Ltd., Suwon, Korea
