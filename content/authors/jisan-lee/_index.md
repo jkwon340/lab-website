@@ -15,6 +15,7 @@ role: Combined M.S./Ph.D. Student
 # Organizations/Affiliations
 organizations:
   - name: Department of Semiconductor Engineering, Hanyang University
+    url: 'https://semicon.hanyang.ac.kr/'
 
 # Short bio (displayed in user profile at end of posts)
 bio: Combined M.S./Ph.D. student in the Department of Semiconductor Engineering at Hanyang University.
@@ -23,6 +24,15 @@ experience:
   - title: Combined M.S./Ph.D. Student
     company: Department of Semiconductor Engineering, Hanyang University, Seoul, Korea
     date: Mar 2027 – Present
+  - title: Undergraduate Researcher
+    company: Electronic Devices Laboratory, Dongguk University, Seoul, Korea
+    date: Dec 2025 – Jul 2026
+
+education:
+  courses:
+    - course: B.S. in Physics and Semiconductor Science
+      institution: Dongguk University
+      year: Mar 2024 – Feb 2027
 
 # Social/Academic Networking
 social:
