@@ -311,8 +311,8 @@ h1, h2, h3, h4 {
   stroke-linecap: round;
   opacity: 0.85;
 }
-.research-diagram__line--memory { stroke: var(--pillar-memory); }
-.research-diagram__line--logic { stroke: var(--pillar-logic); }
+.research-diagram__line--logicmemory { stroke: var(--pillar-logic); }
+.research-diagram__line--interconnect { stroke: var(--pillar-memory); }
 .research-diagram__line--growth { stroke: var(--pillar-growth); }
 
 .research-diagram__dot {
@@ -325,8 +325,8 @@ h1, h2, h3, h4 {
   box-shadow: 0 0 0 3px rgba(11, 18, 32, 0.85), 0 0 10px 2px currentColor;
   pointer-events: none;
 }
-.research-diagram__dot--memory { background: var(--pillar-memory); color: var(--pillar-memory); }
-.research-diagram__dot--logic { background: var(--pillar-logic); color: var(--pillar-logic); }
+.research-diagram__dot--logicmemory { background: var(--pillar-logic); color: var(--pillar-logic); }
+.research-diagram__dot--interconnect { background: var(--pillar-memory); color: var(--pillar-memory); }
 .research-diagram__dot--growth { background: var(--pillar-growth); color: var(--pillar-growth); }
 
 .research-diagram__callout {
@@ -363,14 +363,14 @@ h1, h2, h3, h4 {
   line-height: 1.25;
 }
 
-.research-diagram__callout--memory {
-  --accent: var(--pillar-memory);
-  top: 11%;
+.research-diagram__callout--logicmemory {
+  --accent: var(--pillar-logic);
+  top: 18%;
   left: 0;
 }
-.research-diagram__callout--logic {
-  --accent: var(--pillar-logic);
-  top: 46%;
+.research-diagram__callout--interconnect {
+  --accent: var(--pillar-memory);
+  top: 62%;
   right: 0;
 }
 .research-diagram__callout--growth {
@@ -442,8 +442,8 @@ h1, h2, h3, h4 {
   background: var(--accent);
   flex: none;
 }
-.research-diagram__callouts-mobile a.callout-mobile--memory { --accent: var(--pillar-memory); }
-.research-diagram__callouts-mobile a.callout-mobile--logic { --accent: var(--pillar-logic); }
+.research-diagram__callouts-mobile a.callout-mobile--logicmemory { --accent: var(--pillar-logic); }
+.research-diagram__callouts-mobile a.callout-mobile--interconnect { --accent: var(--pillar-memory); }
 .research-diagram__callouts-mobile a.callout-mobile--growth { --accent: var(--pillar-growth); }
 
 .research-stack {
@@ -459,11 +459,11 @@ h1, h2, h3, h4 {
   border-radius: 999px;
   opacity: 0.9;
 }
-.research-stack__bar--logic {
+.research-stack__bar--logicmemory {
   width: 220px;
   background: linear-gradient(90deg, var(--pillar-logic), transparent);
 }
-.research-stack__bar--memory {
+.research-stack__bar--interconnect {
   width: 150px;
   background: linear-gradient(90deg, var(--pillar-memory), transparent);
 }
@@ -518,8 +518,8 @@ h1, h2, h3, h4 {
   border-top: 4px solid var(--accent, var(--sim-primary));
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.pillar-card--logic { --accent: var(--pillar-logic); }
-.pillar-card--memory { --accent: var(--pillar-memory); }
+.pillar-card--logicmemory { --accent: var(--pillar-logic); }
+.pillar-card--interconnect { --accent: var(--pillar-memory); }
 .pillar-card--growth { --accent: var(--pillar-growth); }
 
 .pillar-card:hover {
@@ -686,7 +686,7 @@ html {
 
 /* Subtle per-group accent colors */
 .people-widget .people-group--principal-investigator { --accent: var(--pillar-logic); }
-.people-widget .people-group--grad-students { --accent: var(--pillar-memory); }
+.people-widget .people-group--graduate-students { --accent: var(--pillar-memory); }
 .people-widget .people-group--undergraduate-students { --accent: var(--pillar-growth); }
 
 .people-widget .people-person {
