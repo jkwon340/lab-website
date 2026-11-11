@@ -24,7 +24,7 @@ bio: Undergraduate research student in the Division of Materials Science and Eng
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:jgkim030416@naver.com'
+    link: 'https://mail.google.com/mail/?view=cm&fs=1&to=jgkim030416@naver.com'
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: 'jgkim030416@naver.com'
