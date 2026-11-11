@@ -25,6 +25,9 @@ experience:
     company: Department of Semiconductor Engineering, Hanyang University, Seoul, Korea
     date: Mar 2027 – Present
   - title: Undergraduate Researcher
+    company: SIM Lab, Hanyang University, Seoul, Korea
+    date: Dec 2026 – Feb 2027
+  - title: Undergraduate Researcher
     company: Electronic Devices Laboratory, Dongguk University, Seoul, Korea
     date: Dec 2025 – Jul 2026
 
