@@ -21,17 +21,17 @@ sections:
           cta_alt_url: ./research/
         - eyebrow: Research Pillar 01
           title: |
-            Future Logic<br>Devices
+            Future Logic &<br>Memory Devices
           lead: |
-            Wafer-scale 2D GAAFETs and monolithically stacked CFETs, pushing logic scaling beyond the limits of silicon.
+            Wafer-scale 2D GAAFETs and monolithically stacked CFETs for logic, paired with non-volatile memory grown directly on top.
           accent: cyan
           cta_label: Explore Research
           cta_url: ./research/
         - eyebrow: Research Pillar 02
           title: |
-            Future Memory<br>Devices
+            M3D Interconnect &<br>Thermal Materials
           lead: |
-            Ferroelectric FeFETs and oxide memory cells, grown directly on top of logic for dense, low-power storage.
+            Low-resistance interconnect metals, ultra-low-k dielectrics, and thermal interface materials for monolithically stacked circuits.
           accent: violet
           cta_label: Explore Research
           cta_url: ./research/
@@ -39,7 +39,7 @@ sections:
           title: |
             Low-Temperature<br>Growth
           lead: |
-            Single-crystal 2D materials grown below 400&deg;C — the enabling technology behind monolithic integration.
+            Single-crystal 2D materials grown below 400&deg;C — the enabling technology behind monolithic 3D integration.
           accent: amber
           cta_label: Explore Research
           cta_url: ./research/
