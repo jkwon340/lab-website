@@ -16,7 +16,7 @@ authors:
   - Changdeok Han
   - "Seunghwan Lee*"
   - "Seunghyun Lee*"
-date: "2026-10-20"
+date: "2026-09-10"
 doi: "10.1002/adma.74987"
 publication_types: ["article-journal"]
 publication: "*Advanced Materials* 38, e74987 (2026)"
